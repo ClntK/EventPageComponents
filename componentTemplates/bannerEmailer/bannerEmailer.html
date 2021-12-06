@@ -1,0 +1,1135 @@
+<div id="pb-block-302934" class="pb-block pb-block-type-html_code text-left "
+    style="padding-bottom: 75px; padding-top: 0px;">
+
+
+
+
+    <!-- /* base styles*/ -->
+    <style>
+        :root {
+            --gray: #888;
+            --black: #000;
+            --white: #fff;
+            --ltgreen: #b0bc2e;
+            --green: #a3ab28;
+            --dkgreen: #969b24;
+            --yellow: #fae44d;
+            --gold: #fbc038;
+            --ltorange: #ff4625;
+            --dkorange: #e62b0a;
+            --orange: #f7583b;
+            --red: #c21d41;
+            --ltpurple: #9c2c54;
+            --purple: #802448;
+            --mauve: #573f42;
+            --brown: #662d2a;
+            --dkblue: #375161;
+            --ltblue: #D1E5DE;
+        }
+
+        /*  general page styles */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            margin: auto;
+            padding-bottom: 50px;
+            /* default background color */
+            background-color: var(--color-dkblue);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+        }
+
+        /*  hero styles */
+        #hero {
+            width: 100%;
+            position: relative;
+            background: rgb(121, 201, 221);
+            background: linear-gradient(145deg, rgba(121, 201, 221, 1) 0%, rgba(234, 50, 148, 1) 100%);
+            background: #EE6D68;
+            background: url('https://www.smartpassiveincome.com/wp-content/uploads/2021/08/symbols-background.png');
+            /* background with symbols only */
+            /* symbols with hands background: url('https://www.smartpassiveincome.com/wp-content/uploads/2021/07/symbols-hands-background.jpg'); */
+            background-position: center bottom;
+            padding-top: 5px;
+        }
+
+        #hero .container {
+            z-index: 2;
+            position: relative;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .bubble-img {
+            position: absolute;
+        }
+
+        #hero .text-lockup {
+            width: 100%;
+            max-width: 675px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        #hero .text-lockup h1 {
+            font-family: 'kimchi', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 268px;
+            line-height: 48%;
+            text-align: right;
+            color: #FFFFFF;
+            margin: 0 0 40px;
+        }
+
+        @media (max-width: 575.98px) {
+            #hero .text-lockup h1 {
+                font-size: 105px;
+                text-align: center;
+            }
+        }
+
+        #hero .text-lockup h3 {
+            font-family: 'sofia-pro', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            letter-spacing: 0.19em;
+            color: #DFE5F0;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0;
+        }
+
+        #hero .text-lockup p {
+            font-family: 'sofia-pro', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 29px;
+            line-height: 38px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        #hero .text-lockup p b {
+            font-family: 'sofia-pro', sans-serif;
+            font-weight: 700;
+        }
+
+        #hero .sep {
+            width: 214px;
+            border-top: 3px solid rgba(189, 254, 255, 0.25);
+            margin: 40px auto;
+        }
+
+        #hero .register-lockup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 785px;
+            margin: 0 auto;
+        }
+
+        #hero .register-lockup .rethink-logo {
+            width: 443px;
+        }
+
+        #hero .register-lockup a {
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background: transparent;
+            font-family: 'sofia-pro', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 0.25em;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 100%;
+            flex: 1;
+            margin-left: 45px;
+            padding: 25px 0;
+            line-height: 100%;
+            transition: all 200ms ease;
+        }
+
+        #hero .register-lockup a:hover {
+            background: #fff;
+            color: #EA3294;
+        }
+
+        #hero h2.date {
+            font-family: 'sofia-pro', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.52em;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            text-align: center;
+            margin: 20px 0 70px;
+        }
+
+        .people-like-you {
+            background: rgba(139, 84, 171, 0.34);
+            font-family: 'sofia-pro', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            padding: 60px 0;
+        }
+
+        .people-like-you h2 {
+            font-family: 'sofia-pro', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.35);
+            display: inline-block;
+            margin: 0 70px 0 0;
+        }
+
+        .people-like-you h3 {
+            font-size: 24px;
+            line-height: 42px;
+            margin: 0 0 45px;
+            padding: 0 20px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .people-like-you h3 span {
+            font-family: 'kimchi', sans-serif;
+            font-size: 59px;
+            font-weight: normal;
+            text-transform: none;
+            letter-spacing: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .people-like-you .marquee {
+            position: relative;
+            width: 100vw;
+            max-width: 100%;
+            height: 70px;
+            overflow-x: hidden;
+        }
+
+        .people-like-you .track {
+            position: absolute;
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 64s linear infinite;
+        }
+
+        .people-like-you .track.two {
+            animation: marquee 48s linear infinite;
+        }
+
+        .people-like-you .track.three {
+            animation: marquee 56s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .hands {
+            margin-top: 250px;
+        }
+
+        @media (max-width:1149px) {
+            #hero .text-lockup {
+                max-width: 445px;
+                padding-top: 80px;
+                padding-right: 20px;
+                padding-left: 20px;
+                box-sizing: border-box;
+            }
+
+            #hero .text-lockup h3 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+
+            #hero .register-lockup {
+                flex-direction: column;
+            }
+
+            #hero .register-lockup .rethink-logo {
+                width: 80%;
+                max-width: 443px;
+                margin-bottom: 30px;
+            }
+
+            #hero .register-lockup a {
+                width: 80%;
+                max-width: 415px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width:949px) {
+            .bubble-img {
+                max-width: 17%;
+                height: auto !important;
+            }
+
+            .bubble.desktop-only {
+                display: none;
+            }
+
+            .hands {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width:649px) {
+
+            .bubble,
+            .disc {
+                opacity: .1 !important;
+            }
+
+            .bubble-img {
+                opacity: .13 !important;
+                width: 20% !important;
+                height: auto !important;
+            }
+
+            #hero .text-lockup {
+                padding-top: 50px;
+            }
+
+            #hero h2.date {
+                font-size: 18px;
+            }
+
+            #hero .text-lockup p {
+                font-size: 24px;
+                line-height: 33px;
+            }
+
+            #hero .sep {
+                margin: 30px auto;
+            }
+
+            #hero .register-lockup a {
+                background: #fff;
+                color: #EA3294;
+            }
+        }
+    </style>
+
+    <!-- /* button */ -->
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet div {
+            display: block;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- /* email form */ -->
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet form {
+            display: block;
+            margin-top: 0em;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- /* form and button */ -->
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet div {
+            display: block;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- /* just button  */ -->
+    <style>
+        .btn.btn-primary.btn-with-border {
+            /* border-color: rgba(239.25, 101.25, 174.75, 0.9); */
+            border-color: #a7bdca;
+        }
+
+        .btn.btn-primary.btn-with-border {
+            border-color: rgba(248.25, 154.5, 126.0, 0.9);
+        }
+
+        .btn.btn-primary.btn-with-border {
+            border-width: 6px;
+            border-color: #FFEDF2;
+        }
+
+        .btn:not(:disabled):not(.disabled),
+        .close:not(:disabled):not(.disabled),
+        .navbar-toggler:not(:disabled):not(.disabled),
+        .page-link:not(:disabled):not(.disabled),
+        summary {
+            cursor: pointer;
+        }
+
+        .btn.btn-primary {
+            /* background-color: #F67953; */
+            background-color: #A0DCEA;
+            color: #468C9C;
+            margin-top: 15px;
+        }
+
+        /* .btn.btn-primary {
+            background-color: #f67953;
+        } */
+
+        /* .btn.btn-primary {
+            background-color: #FF447E;
+        } */
+
+        .btn {
+            border-width: 0;
+            border-radius: 100px;
+            padding: 15px 33px;
+            font-size: 18px;
+            line-height: 29px;
+        }
+
+        .btn,
+        .font-medium,
+        b,
+        strong {
+            font-family: AvenirNextLTW01-Medium, "Helvetica Neue", sans-serif;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .btn,
+        .btn-link,
+        .dropdown-item {
+            font-weight: 400;
+        }
+
+        .badge,
+        .btn,
+        .dropdown-header,
+        .dropdown-item,
+        .input-group-text,
+        .navbar-brand,
+        .progress-bar {
+            white-space: nowrap;
+        }
+
+        .btn,
+        .custom-control-label::before {
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        a {
+            color: #F67953;
+        }
+
+        a {
+            color: #f67953;
+        }
+
+        a {
+            color: #FF447E;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet a:-webkit-any-link {
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        style attribute {
+            max-width: 400px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- /* form group */ -->
+    <style>
+        .form-group .form-control {
+            background: #F1F1F3;
+            border: 0;
+            color: #2F3C4D !important;
+            padding: 16px 22px 14px;
+            border-radius: 9px;
+            font-size: 18px;
+            line-height: 29px;
+            position: relative;
+        }
+
+        .bootstrap-select .dropdown-toggle,
+        .dropdown .dropdown-toggle,
+        .form-group .form-control {
+            font-family: "Avenir Next LT W01 Demi", "Helvetica Neue", sans-serif;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .dropdown-menu,
+        .form-control,
+        .modal-content,
+        .popover {
+            background-clip: padding-box;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button,
+        hr,
+        input {
+            overflow: visible;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet input[type="email"i] {
+            padding: 1px 2px;
+        }
+
+        user agent stylesheet input {
+            -webkit-writing-mode: horizontal-tb !important;
+            font-style: ;
+            font-variant-ligatures: ;
+            font-variant-caps: ;
+            font-variant-numeric: ;
+            font-variant-east-asian: ;
+            font-weight: ;
+            font-stretch: ;
+            font-size: ;
+            font-family: ;
+            text-rendering: auto;
+            color: -internal-light-dark(black, white);
+            letter-spacing: normal;
+            word-spacing: normal;
+            line-height: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            appearance: auto;
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+            margin: 0em;
+            padding: 1px 2px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+            border-image: initial;
+        }
+    </style>
+
+    <!-- /* terms line */ -->
+    <style>
+        .form-group .help-block {
+            text-align: left;
+            display: block;
+            padding: 6px 22px 0;
+        }
+
+        .text-small {
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        style attribute {
+            max-width: 400px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="text-lockup">
+                        <!--<h3>Join the</h3>-->
+                        <img src="https://www.smartpassiveincome.com/wp-content/uploads/2021/08/White-Black-2.png"
+                            style="max-width: 90%; padding-bottom:15px;" alt="Audience Driven Summit">
+                        <p style="max-width: 400px;">Learn the best ways to <b>build your audience</b> in 2021.</p>
+                    </div>
+                    <div class="content-vertical-spacer-xs"></div>
+                    <!-- separator
+<div class="sep"></div>
+-->
+
+
+                    <div class="heysummit-register-by-email-container">
+                        <form action="." method="POST" class="heysummit-register-form" id="cta-top">
+                            <input type="hidden" name="utm_source" id="id_utm_source_top" value="">
+                            <input type="hidden" name="utm_medium" id="id_utm_medium_top" value="">
+                            <input type="hidden" name="utm_campaign" id="id_utm_campaign_top" value="">
+                            <input type="hidden" name="referer_ref" id="id_referer_ref_top" value="">
+                            <input type="hidden" name="http_referer" id="id_http_referer_top" value="">
+                            <input type="hidden" name="ac" id="id_ac_top" value="">
+                            <input type="hidden" name="sc" id="id_sc_top" value="">
+                            <input type="hidden" name="cta_talk" id="id_cta_talk_top" value="">
+                            <input type="hidden" name="cta_speaker" id="id_cta_speaker_top" value="">
+
+                            <div class="heysummit-register-by-email-container-content">
+                                <div class="form-group" style="max-width: 400px; text-align: center; margin: 0 auto;">
+                                    <div class="form-group-content">
+                                        <input id="id_register_email_top" name="register_email" placeholder="Your email"
+                                            aria-label="Your email" type="email"
+                                            class="form-control register-email-input">
+                                        <span class="help-block help-block-info text-center text-small"
+                                            style="padding-left: 0px; padding-right: 0px; color: #ddd;">By submitting
+                                            your email you agree to the <a href="/hs/legal/terms/" target="_blank"
+                                                style="color:#bdbdbd;">terms</a></span>
+                                        <span
+                                            class="help-block help-block-error text-center text-small text-muted color-red hidden"
+                                            style="padding-left: 0px; padding-right: 0px;"></span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-with-border register-btn">Register for
+                                        free</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--</div>
+</div>-->
+                </div> <!-- col-6 -->
+                <div class="col-lg-6 col-xs-12" style="margin-left: auto; margin-right: auto; text-align:center;">
+                    <img src="https://www.smartpassiveincome.com/wp-content/uploads/2021/08/All-Hands-1.png"
+                        class="hands" style="width: 500px; max-width: 100%;" alt="expressive cartoon hands">
+                    <h2 class="date">October 12-13, 2021<br>12:00-5:00pm ET</h2>
+                </div>
+            </div>
+            <div class="content-vertical-spacer-xs"></div>
+        </div>
+    </section>
+
+
+
+
+
+</div>

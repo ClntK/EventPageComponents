@@ -1,0 +1,101 @@
+
+
+
+
+#page-container > footer > div.footer-top-promotion-bar {
+    background-color: var(--color-ltblue);
+    color:var(--color-dkblue);
+}
+
+#page-container > footer > div.footer-top-promotion-bar > div > div > div.col-12.col-sm-12.col-md-3.col-lg-3.col-xl-3.text-right > a {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --color-gray: #888;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-ltgreen: #b0bc2e;
+    --color-green: #a3ab28;
+    --color-dkgreen: #969b24;
+    --color-yellow: #fae44d;
+    --color-gold: #fbc038;
+    --color-ltorange: #ff4625;
+    --color-dkorange: #e62b0a;
+    --color-orange: #f7583b;
+    --color-red: #c21d41;
+    --color-ltpurple: #9c2c54;
+    --color-purple: #802448;
+    --color-mauve: #573f42;
+    --color-brown: #662d2a;
+    --color-dkblue: #375161;
+    --color-ltblue: #D1E5DE;
+    --font-primary: open-sans, san-serif;
+    --font-bold: open-sans, san-serif;
+    --font-extrabold: open-sans, san-serif;
+    box-sizing: border-box;
+    overflow: visible;
+    font-family: inherit;
+    text-transform: none;
+    -webkit-appearance: button;
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+    max-width: 35%;
+    margin-top: 20px;
+    user-select: none;
+    border-radius: 100px;
+    border: 6px solid var(--color-orange);
+    background-color: var(--color-white);
+    color: var(--color-dkblue);
+    line-height: 29px;
+    text-align: center;
+    font-weight: bolder;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    z-index: 99;
+    font-size: calc(14px + 4 * ((100vw - 320px) / 680));
+    min-width: 200px;
+}
+
+a.btn.btn-primary.book-place-footer-btn {
+    color: var(--color-dkblue);
+}
+
+#page-container > footer > div.footer-top-promotion-bar > div > div > div.col-12.col-sm-12.col-md-3.col-lg-3.col-xl-3.text-right > a:hover {
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+
+#page-container > footer > div.footer-top-promotion-bar > div > div > div.col-12.col-sm-12.col-md-3.col-lg-3.col-xl-3.text-right > a:visited {
+    border: 6px solid var(--color-orange);
+    background-color: var(--color-white);
+    color: var(--color-dkblue);
+}

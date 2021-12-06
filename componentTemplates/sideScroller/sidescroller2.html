@@ -1,0 +1,198 @@
+<!-- 
+    Filename: sidescroller2.html
+    Date Created: 10-06-2021
+    Author: Clint Kline
+    Purpose:
+        - Act as a template for an html side-scroller object
+ -->
+
+
+<!-- #############################
+    CSS 
+################################-->
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    :root {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    body {
+        background-color: #EFF1ED;
+        min-height: 100vh;
+    }
+
+    h1 {
+        color: #161032;
+        font-family: 'Baloo Tamma', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    h1:after {
+        background-color: #00A8E8;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 0.25rem;
+        position: absolute;
+        width: 1rem;
+    }
+
+    p {
+        color: rgba(black, 0.8);
+    }
+
+    .container {
+        margin: 0 auto 2rem;
+        max-width: 900px;
+        padding: 0 1.5rem;
+    }
+
+    .sample-item-1 {
+        background-color: #99E1D9;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-2 {
+        background-color: #32292F;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-3 {
+        background-color: #D81E5B;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    /* Plugin code below */
+
+    .horizontal-scrolling-banner {
+        overflow: hidden;
+    }
+
+    .horizontal-scrolling-banner__helper-wrapper {
+        align-items: center;
+        display: flex;
+        left: 0;
+        transform: translateZ(0);
+        transition-property: left;
+        transition-timing-function: linear;
+    }
+</style>
+
+<!-- #############################
+    HTML 
+################################-->
+
+<div class="container">
+    <h1>Endless Horizontal Scrolling Banner</h1>
+
+    <p>The Endless Horizontal Scrolling Banner is a helper function that lets you add a decorative effect to a wrapper
+        element, where the children will scroll infinitely from right to left.</p>
+</div>
+
+<div class="horizontal-scrolling-banner">
+    <div class="sample-item-1"></div>
+    <div class="sample-item-2"></div>
+    <div class="sample-item-3"></div>
+</div>
+
+
+<!-- #############################
+    JAVASCRIPT 
+################################-->
+
+<script>
+    (function horizontalScrollingBanner() {
+        var banners = document.getElementsByClassName('horizontal-scrolling-banner');
+        if (!banners || banners.length === 0) {
+            return;
+        }
+        var pxPerSecond = 50;
+        setUpElements();
+        scrollTheBanners();
+        window.addEventListener('resize', setUpElements);
+
+        function setUpElements() {
+            for (var i = 0; i < banners.length; i++) {
+                var currentBanner = banners[i];
+                var helperWrapperClass = 'horizontal-scrolling-banner__helper-wrapper';
+                var currentHelperWrapper = currentBanner.querySelector('.' + helperWrapperClass);
+                if (currentHelperWrapper) {
+                    var clones = currentHelperWrapper.querySelectorAll('[data-clone]');
+                    Array.prototype.forEach.call(clones, function (clone) {
+                        clone.remove();
+                    });
+                    var childrenCount = currentHelperWrapper.children.length;
+                    for (var i = 0; i < childrenCount; i++) {
+                        currentBanner.appendChild(currentHelperWrapper.children[0]);
+                    }
+                    currentHelperWrapper.remove();
+                }
+
+                var children = currentBanner.children;
+
+                var bannerWidth = currentBanner.getBoundingClientRect().width;
+                var minWidthToCoverBanner = (bannerWidth * 2) + children[0].getBoundingClientRect().width;
+                var childrenWidth = Array.prototype.reduce.call(children, function (r, child) {
+                    return r + child.getBoundingClientRect().width;
+                }, 0);
+                var currentWidth = childrenWidth;
+
+
+                do {
+                    Array.prototype.forEach.call(children, function (child) {
+                        var clone = child.cloneNode();
+                        clone.setAttribute('aria-hidden', true);
+                        clone.dataset.clone = true;
+                        currentBanner.appendChild(clone);
+                    });
+                    currentWidth += childrenWidth;
+                } while (currentWidth < minWidthToCoverBanner);
+
+                var transitionHelperWrapper = document.createElement('div');
+                transitionHelperWrapper.classList.add('horizontal-scrolling-banner__helper-wrapper');
+                var childrenCount = children.length;
+                for (var i = 0; i < childrenCount; i++) {
+                    transitionHelperWrapper.appendChild(children[0]);
+                }
+                currentBanner.appendChild(transitionHelperWrapper);
+                transitionHelperWrapper.dataset.childrenWidth = childrenWidth;
+            }
+        }
+
+        function scrollTheBanners() {
+            for (var i = 0; i < banners.length; i++) {
+                var helperWrapper = banners[i].firstElementChild;
+                var childrenWidth = helperWrapper.dataset.childrenWidth;
+                var offsetLeft = helperWrapper.offsetLeft;
+
+                if (offsetLeft <= (childrenWidth * -1)) {
+                    helperWrapper.style.transitionDuration = '0s';
+                    helperWrapper.style.left = '0px';
+                    helperWrapper.style.removeProperty('transition-duration');
+                } else if (helperWrapper.style.left === '' || helperWrapper.style.left === '0px') {
+                    setTimeout(function () {
+                        helperWrapper.style.transitionDuration = (childrenWidth / pxPerSecond).toFixed() + 's';
+                        helperWrapper.style.left = (childrenWidth * -1) + 'px';
+                    }, 0);
+                }
+            }
+            requestAnimationFrame(scrollTheBanners);
+        }
+    })();
+</script>

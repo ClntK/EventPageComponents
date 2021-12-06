@@ -1,0 +1,275 @@
+<!-- 
+    Filename: sidescroller.html
+    Date Created: 10-06-2021
+    Author: Clint Kline
+    Purpose:
+        - Act as a template for an html side-scroller object
+ -->
+
+
+<!-- #############################
+    CSS 
+################################-->
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    :root {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    body {
+        background-color: #EFF1ED;
+        min-height: 100vh;
+    }
+
+    h1 {
+        color: #161032;
+        font-family: 'Baloo Tamma', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    h1:after {
+        background-color: #00A8E8;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 0.25rem;
+        position: absolute;
+        width: 1rem;
+    }
+
+    p {
+        color: rgba(black, 0.8);
+    }
+
+    .container {
+        margin: 0 auto 2rem;
+        max-width: 900px;
+        padding: 0 1.5rem;
+    }
+
+    .sample-item-1 {
+        background-color: #99E1D9;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-2 {
+        background-color: #32292F;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-3 {
+        background-color: #D81E5B;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-4 {
+        background-color: #99E1D9;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-5 {
+        background-color: #32292F;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-6 {
+        background-color: #D81E5B;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-7 {
+        background-color: #99E1D9;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-8 {
+        background-color: #32292F;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+    .sample-item-9 {
+        background-color: #D81E5B;
+        height: 100px;
+        min-width: 200px;
+        width: 300px;
+    }
+
+
+
+
+    /* Plugin code below */
+
+    .horizontal-scrolling-banner {
+        overflow: hidden;
+    }
+
+    .horizontal-scrolling-banner__helper-wrapper {
+        align-items: center;
+        display: flex;
+        left: 0;
+        transform: translateZ(0);
+        transition-property: left;
+        transition-timing-function: linear;
+    }
+</style>
+
+<!-- #############################
+    HTML 
+################################-->
+
+<!-- <div class="container">
+    <h1>Endless Horizontal Scrolling Banner</h1>
+
+    <p>The Endless Horizontal Scrolling Banner is a helper function that lets you add a decorative effect to a wrapper
+        element, where the children will scroll infinitely from right to left.</p>
+</div> -->
+
+<div class="horizontal-scrolling-banner">
+    <div class="sample-item-1 item">LET'S</div>
+    <div class="sample-item-2 item">GO</div>
+    <div class="sample-item-3 item">WORK</div>
+    <div class="sample-item-4 item">CAMPING!</div>
+    <div class="sample-item-5 item">JOIN</div>
+    <div class="sample-item-6 item">US</div>
+    <div class="sample-item-7 item">LIVE</div>
+    <div class="sample-item-8 item">FOR</div>
+    <div class="sample-item-9 item">FREE!</div>
+</div>
+
+
+<!-- #############################
+    JAVASCRIPT 
+################################-->
+
+<script>
+    (function horizontalScrollingBanner() {
+        // create a variable for the entire banner tag
+        var banners = document.getElementsByClassName('horizontal-scrolling-banner');
+        if (!banners || banners.length === 0) {
+            return;
+        }
+        //  control speed of banner here.
+        var pxPerSecond = 100;
+        setUpElements();
+        scrollTheBanners();
+        // set an event listener that triggers the setupElements function to reset when the window is resized
+        window.addEventListener('resize', setUpElements);
+
+        function setUpElements() {
+            for (var i = 0; i < banners.length; i++) {
+                //  variable to represent a block 
+                var currentBanner = banners[i];
+                // create a wrapper class 
+                var helperWrapperClass = 'horizontal-scrolling-banner__helper-wrapper';
+                // create a wrapper for the current block
+                var currentHelperWrapper = currentBanner.querySelector('.' + helperWrapperClass);
+
+                // if there is a current wrapper
+                if (currentHelperWrapper) {
+                    // ??? variable to select each data clone ???
+                    var clones = currentHelperWrapper.querySelectorAll('[data-clone]');
+                    // remove
+                    Array.prototype.forEach.call(clones, function (clone) { clone.remove(); });
+                    // count the length of the wrapper array
+                    var childrenCount = currentHelperWrapper.children.length;
+
+                    // for each block in the scroller 
+                    for (var i = 0; i < childrenCount; i++) {
+                        currentBanner.appendChild(currentHelperWrapper.children[0]);
+                    }
+                    currentHelperWrapper.remove();
+                }
+
+                var children = currentBanner.children;
+
+                var bannerWidth = currentBanner.getBoundingClientRect().width;
+                var minWidthToCoverBanner = (bannerWidth * 2) + children[0].getBoundingClientRect().width;
+                var childrenWidth = Array.prototype.reduce.call(children, function (r, child) {
+                    return r + child.getBoundingClientRect().width;
+                }, 0);
+                var currentWidth = childrenWidth;
+
+
+                // do {
+                //     Array.prototype.forEach.call(children, function (child) {
+                //         var clone = child.cloneNode();
+                //         clone.setAttribute('aria-hidden', true);
+                //         clone.dataset.clone = true;
+                //         currentBanner.appendChild(clone);
+                //     });
+                //     currentWidth += childrenWidth;
+                // } while (currentWidth < minWidthToCoverBanner);
+
+                var transitionHelperWrapper = document.createElement('div');
+                transitionHelperWrapper.classList.add('horizontal-scrolling-banner__helper-wrapper');
+                var childrenCount = children.length;
+                for (var i = 0; i < childrenCount; i++) {
+                    transitionHelperWrapper.appendChild(children[0]);
+                }
+                currentBanner.appendChild(transitionHelperWrapper);
+                transitionHelperWrapper.dataset.childrenWidth = childrenWidth;
+            }
+        }
+
+        function scrollTheBanners() {
+            // for loop to find the width of the banner and the left offset
+            for (var i = 0; i < banners.length; i++) {
+                // return first child element of the banner. helpWrapper = a single block
+                var helperWrapper = banners[i].firstElementChild;
+                console.log(helperWrapper);
+                // get total width of banner blocks. childrenwidth = total banner width
+                var childrenWidth = helperWrapper.dataset.childrenWidth;
+                console.log(childrenWidth);
+                // get left offset
+                var offsetLeft = helperWrapper.offsetLeft;
+                console.log(offsetLeft);
+
+                // activate the banner
+                // if the left offset is less than or equal to the negative value of the banner currently
+                if (offsetLeft <= (childrenWidth * -1)) {
+                    // ?? stop banner from scrolling if content is smaller than screen width ??
+                    helperWrapper.style.transitionDuration = '0s';
+                    helperWrapper.style.left = '0px';
+                    helperWrapper.style.removeProperty('transition-duration');
+                    // otherwise, if the left margin is 0 
+                } else if (helperWrapper.style.left === '' || helperWrapper.style.left === '0px') {
+                    // main transition function
+                    setTimeout(function () {
+                        // set the transition duration using child width and pxPerSecond 
+                        helperWrapper.style.transitionDuration = (childrenWidth / pxPerSecond).toFixed() + 's';
+                        // set left margin to the negative value of the width of the child
+                        helperWrapper.style.left = (childrenWidth * -1) + 'px';
+                    }, 0);
+                }
+            }
+            // tell browser to perform animation and request an update on animation before the next repaint
+            requestAnimationFrame(scrollTheBanners);
+        }
+    })();
+</script>

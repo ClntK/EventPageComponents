@@ -1,0 +1,746 @@
+<!-- 
+    Filename: hero.html
+    Date Created: 10-06-2021
+    Author: Clint Kline
+    Purpose:
+        - Act as a template for an html hero object
+ -->
+
+
+
+
+<!-- #############################
+    CSS 
+################################-->
+
+
+<style>
+    /* BASE STYLES */
+    /* Colors, background/gradient style */
+
+    #hero {
+        width: 100%;
+        position: relative;
+        background: rgb(121, 201, 221);
+        background: linear-gradient(145deg, rgba(121, 201, 221, 1) 0%, rgba(234, 50, 148, 1) 100%);
+        padding-top: 85px;
+    }
+
+    #hero .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    /* BUBBLES */
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .bubble-img {
+        position: absolute;
+    }
+
+    #hero .text-lockup {
+        width: 100%;
+        max-width: 675px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 160px;
+    }
+
+    #hero .text-lockup h1 {
+        font-family: 'kimchi', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 268px;
+        line-height: 48%;
+        text-align: right;
+        color: #FFFFFF;
+        margin: 0 0 40px;
+    }
+
+    #hero .text-lockup h3 {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 0.19em;
+        color: #DFE5F0;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+
+    #hero .text-lockup p {
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 29px;
+        line-height: 38px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    #hero .text-lockup p b {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 700;
+    }
+
+    #hero .sep {
+        width: 214px;
+        border-top: 3px solid rgba(189, 254, 255, 0.25);
+        margin: 50px auto;
+    }
+
+    #hero .register-lockup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 785px;
+        margin: 0 auto;
+    }
+
+    #hero .register-lockup .rethink-logo {
+        width: 443px;
+    }
+
+    #hero .register-lockup a {
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: transparent;
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        flex: 1;
+        margin-left: 45px;
+        padding: 25px 0;
+        line-height: 100%;
+        transition: all 200ms ease;
+    }
+
+    #hero .register-lockup a:hover {
+        background: #fff;
+        color: #EA3294;
+    }
+
+    #hero h2.date {
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 38px;
+        letter-spacing: 0.52em;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0 90px;
+    }
+
+    .people-like-you {
+        background: rgba(139, 84, 171, 0.34);
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.15em;
+        color: rgba(255, 255, 255, 0.6);
+        text-transform: uppercase;
+        padding: 60px 0;
+    }
+
+    .people-like-you h2 {
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 0.15em;
+        color: rgba(255, 255, 255, 0.35);
+        display: inline-block;
+        margin: 0 70px 0 0;
+    }
+
+    .people-like-you h3 {
+        font-size: 24px;
+        line-height: 42px;
+        margin: 0 0 45px;
+        padding: 0 20px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .people-like-you h3 span {
+        font-family: 'kimchi', sans-serif;
+        font-size: 59px;
+        font-weight: normal;
+        text-transform: none;
+        letter-spacing: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .people-like-you .marquee {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 140px;
+        overflow-x: hidden;
+    }
+
+    .people-like-you .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 64s linear infinite;
+    }
+
+    .people-like-you .track.two {
+        animation: marquee 48s linear infinite;
+    }
+
+    .people-like-you .track.three {
+        animation: marquee 56s linear infinite;
+    }
+
+    img .scrollImage {
+        width: 100px;
+        height: auto;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width:1149px) {
+        #hero .text-lockup {
+            max-width: 445px;
+            padding-top: 80px;
+            padding-right: 20px;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+
+        #hero .text-lockup h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        #hero .register-lockup {
+            flex-direction: column;
+        }
+
+        #hero .register-lockup .rethink-logo {
+            width: 80%;
+            max-width: 443px;
+            margin-bottom: 30px;
+        }
+
+        #hero .register-lockup a {
+            width: 80%;
+            max-width: 415px;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width:949px) {
+        .bubble-img {
+            max-width: 17%;
+            height: auto !important;
+        }
+
+        .bubble.desktop-only {
+            display: none;
+        }
+    }
+
+    @media (max-width:649px) {
+
+        .bubble,
+        .disc {
+            opacity: .1 !important;
+        }
+
+        .bubble-img {
+            opacity: .13 !important;
+            width: 20% !important;
+            height: auto !important;
+        }
+
+        #hero .text-lockup {
+            padding-top: 50px;
+        }
+
+        #hero h2.date {
+            font-size: 18px;
+        }
+
+        #hero .text-lockup p {
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        #hero .sep {
+            margin: 30px auto;
+        }
+
+        #hero .register-lockup a {
+            background: #fff;
+            color: #EA3294;
+        }
+    }
+
+
+    .bubble-img {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --brand: #05E0E4;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #777;
+        font-family: 'sofia-pro', sans-serif;
+        text-align: center !important;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-style: none;
+        position: absolute;
+        max-width: 17%;
+        height: auto !important;
+        width: 205px;
+        left: 14.2%;
+        top: 179px;
+    }
+
+    .bubble {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --brand: #05E0E4;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #777;
+        font-family: 'sofia-pro', sans-serif;
+        text-align: center !important;
+        position: absolute;
+        border-radius: 50%;
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        left: 2.4%;
+        top: 315px;
+        background: #F89E93;
+    }
+
+
+
+
+    @media screen and (max-width: 632px) {
+
+        .bubble-img {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            --brand: #05E0E4;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #777;
+            font-family: 'sofia-pro', sans-serif;
+            text-align: center !important;
+            box-sizing: border-box;
+            vertical-align: middle;
+            border-style: none;
+            position: absolute;
+            max-width: 17%;
+            opacity: .13 !important;
+            width: 20% !important;
+            height: auto !important;
+            left: 79%;
+            top: 363px;
+        }
+    }
+
+    .bubble {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --brand: #05E0E4;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #777;
+        font-family: 'sofia-pro', sans-serif;
+        text-align: center !important;
+        position: absolute;
+        border-radius: 50%;
+        box-sizing: border-box;
+        opacity: .1 !important;
+        width: 48px;
+        height: 48px;
+        left: 2.4%;
+        top: 315px;
+        background: #F89E93;
+    }
+</style>
+
+<!-- #############################
+    HTML 
+################################-->
+
+
+<section id="hero">
+
+    <!-- bubble images -->
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_01.png"
+        style="width:205px;height:131px;left:14.2%;top:179px;">
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_02.png"
+        style="width:198px;height:198px;left:6.2%;top:324px;">
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_03.png"
+        style="width:132px;height:132px;left:18%;top:572px;">
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_04.png"
+        style="width:120px;height:120px;left:74.8%;top:166px;">
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_05.png"
+        style="width:136px;height:136px;left:79%;top:363px;">
+
+    <img class="bubble-img" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/hero_06.png"
+        style="width:102px;height:102px;left:75.4%;top:578px;">
+
+    <!-- empty bubble positions/colors -->
+
+    <div class="bubble" style="width:35px;height:35px;left:7.7%;top:157px;background:#F7D148;"></div>
+    <div class="bubble" style="width:37px;height:37px;left:8.1%;top:261px;border:6px solid rgba(255,255,255,0.3);">
+    </div>
+    <div class="bubble" style="width:48px;height:48px;left:2.4%;top:315px;background:#F89E93;"></div>
+    <div class="bubble" style="width:13px;height:13px;left:22.4%;top:353px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:13px;height:13px;left:7.7%;top:536px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:13px;height:13px;left:21.8%;top:523px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:55px;height:55px;left:5.9%;top:602px;border:6px solid rgba(255,255,255,0.7);">
+    </div>
+    <div class="bubble" style="width:37px;height:37px;left:12.5%;top:576px;border:6px solid rgba(255,255,255,0.3);">
+    </div>
+    <div class="bubble" style="width:102px;height:102px;left:9.6%;top:696px;background:#46CFF1;"></div>
+    <div class="bubble" style="width:39px;height:39px;left:32%;top:178px;border:6px solid rgba(255,255,255,0.4);"></div>
+    <div class="bubble desktop-only" style="width:13px;height:13px;left:38.2%;top:192px;border:2px solid #fff;"></div>
+    <div class="bubble desktop-only" style="width:24px;height:24px;left:50.4%;top:180px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:55px;height:55px;left:67.5%;top:197px;border:6px solid rgba(255,255,255,0.7);">
+    </div>
+    <div class="bubble" style="width:36px;height:36px;left:71.5%;top:124px;background:#46CFF1;"></div>
+    <div class="bubble" style="width:59px;height:59px;left:85.8%;top:226px;border:6px solid rgba(255,255,255,0.4);">
+    </div>
+    <div class="bubble" style="width:13px;height:13px;left:75.6%;top:339px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:32px;height:32px;left:91.3%;top:321px;border:3px solid #F7D148;"></div>
+    <div class="bubble" style="width:34px;height:34px;left:74.4%;top:488px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:13px;height:13px;left:90.6%;top:510px;border:2px solid #fff;"></div>
+    <div class="bubble" style="width:39px;height:39px;left:85.7%;top:547px;border:6px solid rgba(255,255,255,0.4);">
+    </div>
+    <div class="bubble" style="width:27px;height:27px;left:69.6%;top:678px;border:6px solid rgba(255,255,255,0.3);">
+    </div>
+    <div class="bubble" style="width:34px;height:34px;left:87.2%;top:640px;background:#F89E93;"></div>
+
+    <!-- text -->
+
+    <div class="container">
+
+        <!-- main panel -->
+        <div class="text-lockup">
+            <!-- superscript -->
+            <h3>Join The</h3>
+            <!-- title image -->
+            <img src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/txt_passion-economy.svg"
+                alt="Passion Economy" width="100%">
+            <!-- subscript -->
+            <p>3 days of conversations and networking to help you <b>thrive as a solopreneur.</b></p>
+        </div>
+
+        <!-- ticket panel -->
+
+        <div class="sep"></div>
+        <div class="register-lockup">
+
+            <!-- event logo image -->
+            <img class="rethink-logo" src="https://heysummit-public-media.s3.amazonaws.com/rethink/img/rethink_wht.svg"
+                alt="Re:Think Virtual Summit Logo">
+
+            <!-- ticket button text -->
+            <a href="/checkout/select-tickets">Get Tickets</a>
+        </div>
+
+        <!-- date -->
+
+        <h2 class="date">August 4-6, 2020</h2>
+
+    </div>
+
+
+    <!-- side scroller -->
+
+
+    <div class="people-like-you">
+
+        <!-- stationary text -->
+
+        <h3>Learn from <span>People Like You</span> who have done it before</h3>
+
+        <!-- marquee -->
+        <!-- row one -->
+
+        <div class="marquee">
+            <div class="track">
+                <div>
+
+                    <!-- track content text -->
+
+                    <h2>ARTISTS</h2>
+                    <h2>AUTHORS</h2>
+                    <h2>BUILDERS</h2>
+                    <h2>COMMUNITY ORGANIZERS</h2>
+                    <h2>DIGITAL COURSE CREATORS</h2>
+                    <h2>E-COMMERCE SHOP OWNERS</h2>
+                    <h2>FOUNDERS</h2>
+                    <h2>MAKERS</h2>
+                    <h2>MUSICIANS</h2>
+                    <h2>PODCASTERS</h2>
+                    <h2>PHOTOGRAPHERS</h2>
+                    <h2>THOUGHT LEADERS</h2>
+                    <h2>WRITERS</h2>
+                    <h2>ARTISTS</h2>
+                    <h2>AUTHORS</h2>
+                    <h2>BUILDERS</h2>
+                    <h2>COMMUNITY ORGANIZERS</h2>
+                    <h2>DIGITAL COURSE CREATORS</h2>
+                    <h2>E-COMMERCE SHOP OWNERS</h2>
+                    <h2>FOUNDERS</h2>
+                    <h2>MAKERS</h2>
+                    <h2>MUSICIANS</h2>
+                    <h2>PODCASTERS</h2>
+                    <h2>PHOTOGRAPHERS</h2>
+                    <h2>THOUGHT LEADERS</h2>
+                    <h2>WRITERS</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+
+        <div class="marquee">
+            <div class="track two">
+                <div>
+
+                    <!-- track content -->
+
+                    <h2>WRITERS</h2>
+                    <h2>THOUGHT LEADERS</h2>
+                    <h2>PHOTOGRAPHERS</h2>
+                    <h2>PODCASTERS</h2>
+                    <h2>MUSICIANS</h2>
+                    <h2>MAKERS</h2>
+                    <h2>FOUNDERS</h2>
+                    <h2>DIGITAL COURSE CREATORS</h2>
+                    <h2>COMMUNITY ORGANIZERS</h2>
+                    <h2>BUILDERS</h2>
+                    <h2>AUTHORS</h2>
+                    <h2>ARTISTS</h2>
+                    <h2>WRITERS</h2>
+                    <h2>THOUGHT LEADERS</h2>
+                    <h2>PHOTOGRAPHERS</h2>
+                    <h2>PODCASTERS</h2>
+                    <h2>MUSICIANS</h2>
+                    <h2>MAKERS</h2>
+                    <h2>FOUNDERS</h2>
+                    <h2>E-COMMERCE SHOP OWNERS</h2>
+                    <h2>DIGITAL COURSE CREATORS</h2>
+                    <h2>COMMUNITY ORGANIZERS</h2>
+                    <h2>BUILDERS</h2>
+                    <h2>AUTHORS</h2>
+                    <h2>ARTISTS</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 3 -->
+
+        <div class="marquee">
+            <div class="track three">
+                <div>
+
+                    <!-- track content images -->
+
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+                    <img class="scrollImage"
+                        src="https://drive.google.com/uc?export=view&id=1VSiKrEVx2IUb6iApPVOCBeDGVBDkOE6x"
+                        alt="scrollImage" href="www.google.com">
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,311 @@
+<!-- 
+    FileName: packages.html 
+    Author: Clint Kline
+    Date Created: 10-2-2021
+    LastUpdated: 10-31-2021
+    Purpose:
+        - construct a display consisting of a header row, 
+        above 3 vertical columns. texts wraps, grows, and shrinks with screen size.
+        
+-->
+
+
+<div>
+
+
+
+
+    <!-- /* page-container */ -->
+    <style>
+        body {
+            min-height: 100%;
+            position: relative;
+            font-family: 'sofia-pro', sans-serif;
+            background: var(--ltblue);
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+
+    <!-- /* packages / prize bubble*/ -->
+    <style>
+        #packages {
+            position: relative;
+            text-align: center;
+        }
+
+        #packages .section-heading h3 {
+            color: var(--dkblue);
+        }
+
+        #packages .section-heading h2 {
+            color: var(--orange);
+            line-height: 1.5em;
+        }
+
+        #packages .section-heading p {
+            color: #6F7680;
+        }
+
+        #packages .package-detail {
+            width: 100%;
+            max-width: 1050px;
+            margin: 85px auto 0;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        #packages .package-detail .package {
+            width: 30%;
+        }
+
+        #packages .package-detail .package h4 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: #939AA4;
+            margin: 0;
+        }
+
+        #packages .package-detail .package h2 {
+            font-family: 'kimchi', sans-serif;
+            font-weight: normal;
+            font-size: calc(28px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+            line-height: 100%;
+            color: #313D4D;
+            margin: 10px 0 40px;
+        }
+
+        #packages .package-detail .package p.header {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 15px;
+            color: #6F7680;
+            text-transform: uppercase;
+            margin: 0 0 25px;
+        }
+
+        #packages .package-detail .package p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #6F7680;
+            margin: 0;
+            padding: 0 50px;
+        }
+
+        #packages .package-detail .package .sep {
+            width: 30px;
+            height: 2px;
+            background: var(--orange);
+            margin: 15px auto;
+        }
+
+        #packages .prize-bubble.mobile {
+            display: none;
+        }
+
+        #packages .prize-bubble.desktop {
+            position: absolute;
+            right: 14%;
+            top: 132px;
+            width: 209px;
+            height: 209px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgba(255, 255, 255, 0.68);
+            background: var(--orange);
+            transform: rotate(17.61deg);
+            border-radius: 50%;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+
+        #packages .prize-bubble p {
+            font-family: 'sofia-pro', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+
+        #packages .prize-bubble h2 {
+            line-height: 1.4em;
+        }
+
+        /* WIN PRIZES */
+        #packages .prize-bubble h3 {
+            font-family: 'kimchi', sans-serif;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 10px 0;
+        }
+
+        @media (max-width:1000px) {
+            #packages .prize-bubble.desktop {
+                display: none;
+            }
+
+            #packages .prize-bubble.mobile {
+                display: inline-block;
+                font-family: 'sofia-pro', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 18px;
+                padding: 10px 20px;
+                margin: 30px 20px -30px;
+                color: rgba(255, 255, 255, 0.68);
+                background: var(--orange);
+                border-radius: 50px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        @media (max-width:949px) {
+            #packages .package-detail .package p {
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width:649px) {
+            #packages .package-detail {
+                display: block;
+            }
+
+            #packages .package-detail .package {
+                width: 80%;
+                margin: 0 auto 80px;
+                background-color: var(-color--purple);
+            }
+
+            #packages .package-detail .package:last-of-type {
+                margin-bottom: 0;
+            }
+
+            #packages .package-detail .package h2 {
+                font-size: 68px;
+            }
+
+            #packages .package-detail .package p {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 549px) {
+            .section-heading p {
+                font-size: 21px;
+                line-height: 145%;
+            }
+        }
+
+        .section-heading p {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 145%;
+            width: 100%;
+            max-width: 615px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 991.98px) {
+            p {
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+    </style>
+
+
+    <body>
+        <section id="packages">
+            <div class="section-heading">
+                <h3>Packages</h3>
+                <h2>Let's Do It!</h2>
+                <p>We've got a lot planned to help kickstart your business. Pick and choose sessions and networking to
+                    achieve your goals.</p>
+            </div>
+            <div class="prize-bubble desktop">
+                <p>Automatic Entry To</p>
+                <h3>Win Prizes</h3>
+                <p>From our Speakers</p>
+            </div>
+            <div class="prize-bubble mobile">
+                <p>Automatic entry to win prizes from our speakers !</p>
+            </div>
+            <div class="package-detail">
+                <div class="package">
+                    <h4>3-Day Access</h4>
+                    <h2>Live Event</h2>
+                    <p class="header">Access To:</p>
+                    <p>Live Broadcasts of Speaker Sessions</p>
+                    <div class="sep"></div>
+                    <p>Chat Community</p>
+                </div>
+                <div class="package">
+                    <h4>3-Day+1 Month</h4>
+                    <h2>Live + Replay</h2>
+                    <p class="header">Live Day,
+                        Plus:</p>
+                    <p>30-Day Continued Access to Content</p>
+                    <div class="sep"></div>
+                    <p>Session wrap-up guides delivered straight to your email after the summit</p>
+                    <div class="sep"></div>
+                    <p>Access to Exclusive Community,
+                        make targeted introductions</p>
+                </div>
+                <div class="package">
+                    <h4>Everything+More</h4>
+                    <h2>VIP Package</h2>
+                    <p class="header">Live+Replay,
+                        Plus:</p>
+                    <p>12 Months Continued Access to Content</p>
+                    <div class="sep"></div>
+                    <p>Exclusive Access from Partner Products</p>
+                    <div class="sep"></div>
+                    <p>Entered for a chance to win one of 50 gift boxes</p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="/checkout/select-tickets/" class="btn" style="margin: 30px auto 0;">Get Tickets</a>
+            </div>
+        </section>
+</div>
+</body>

@@ -1,0 +1,4657 @@
+<style>
+    /* base styles */
+
+
+
+    .btn.btn-primary:hover {
+        background-color: #dd1780
+    }
+
+    .btn.btn-primary.btn-with-border {
+        border-color: rgba(239.25, 101.25, 174.75, 0.9)
+    }
+
+    .btn.btn-primary.btn-with-border:hover {
+        border-color: rgba(239.25, 101.25, 174.75, 0.5)
+    }
+
+    .btn.btn-default.purple {
+        border-color: #46cff1;
+        color: #46cff1
+    }
+
+    .btn.btn-default.purple:hover {
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .btn.btn-default:hover {
+        border-color: #46cff1;
+        color: #46cff1
+    }
+
+    .btn.btn-default.blue {
+        border-color: #ea3294;
+        color: #ea3294
+    }
+
+    .btn.btn-default.blue:hover {
+        background: rgba(239.25, 101.25, 174.75, 0.08)
+    }
+
+    .btn.btn-default.red {
+        border-color: #46cff1;
+        color: #46cff1
+    }
+
+    .btn.btn-default.red:hover {
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .btn.btn-secondary.color-red {
+        color: #ff5280 !important
+    }
+
+    .btn.btn-secondary.color-red:hover {
+        border-color: #ff5280 !important
+    }
+
+    .btn.btn-secondary.heysummit-checkout-tickets-btn {
+        color: #46cff1
+    }
+
+    header .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #ea3294 !important
+    }
+
+    body.talks-in-session header .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #ea3294 !important
+    }
+
+    header .navbar .navbar-nav .nav-item.show .dropdown-toggle {
+        color: #ea3294 !important
+    }
+
+    header .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #ea3294
+    }
+
+    .form-group .bootstrap-select.show .dropdown-toggle {
+        color: #46cff1 !important;
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    form fieldset legend {
+        color: #46cff1
+    }
+
+    .nav-steps-horizontal li .fa-circle {
+        color: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .nav-steps-horizontal li .fa-layers-text {
+        color: #46cff1
+    }
+
+    .nav-steps-horizontal li.active .fa-circle,
+    .nav-steps-horizontal li.complete .fa-circle {
+        color: #46cff1
+    }
+
+    .nav-steps-horizontal li.nav-connecting-line {
+        background: rgba(116.25, 219.0, 244.5, 0.08);
+    }
+
+    form h4 {
+        color: #46cff1
+    }
+
+    .box.box-flat-bg.box-flat-bg-purple {
+        background: rgba(116.25, 219.0, 244.5, 0.08);
+        color: #46cff1
+    }
+
+    .box.box-flat-bg.box-flat-bg-purple h4 {
+        color: #46cff1
+    }
+
+    mark.blue {
+        background: rgba(116.25, 219.0, 244.5, 0.08) !important;
+        color: #46cff1 !important
+    }
+
+    .form-group .form-control:focus,
+    .form-group .form-control.focus {
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .alert.alert-info {
+        background: rgba(116.25, 219.0, 244.5, 0.08);
+        color: #46cff1
+    }
+
+    .box.box-is-active,
+    .box.box-is-active:hover {
+        border-color: #46cff1;
+        box-shadow: 0 0 0 2px #46cff1
+    }
+
+    .box.box-is-button:not(.box-is-active):hover {
+        border-color: #46cff1
+    }
+
+    .box mark {
+        background: rgba(116.25, 219.0, 244.5, 0.08);
+        color: #46cff1
+    }
+
+    .box .box-top-right-badge {
+        background: #46cff1
+    }
+
+    .tooltip .tooltip-inner {
+        background: #46cff1
+    }
+
+    .tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
+    .tooltip.bs-tooltip-top .arrow::before,
+    .tooltip .tooltip-inner {
+        border-top-color: #46cff1
+    }
+
+    .redirect-on-click-with-style:hover {
+        border-color: #46cff1
+    }
+
+    footer .footer-top-promotion-bar .btn.btn-primary {
+        background-color: #ea3294
+    }
+
+    footer .footer-top-promotion-bar .btn.btn-primary:hover {
+        background-color: #dd1780
+    }
+
+    footer ul li a:hover {
+        color: #ea3294
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+        color: #ea3294
+    }
+
+    .bootstrap-select .dropdown-menu ul li a.active,
+    .dropdown .dropdown-menu ul li a.active {
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .bootstrap-select .dropdown-menu ul li a:hover,
+    .dropdown .dropdown-menu ul li a:hover {
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    .dropdown-menu a.dropdown-item:hover {
+        background: rgba(116.25, 219.0, 244.5, 0.08) !important
+    }
+
+    .talks-in-session-cta .btn.btn-primary:hover {
+        background-color: #dd1780
+    }
+
+    .ticket-required-overlay {
+        background: rgba(239.25, 101.25, 174.75, 0.3) !important
+    }
+
+    body.edit-mode .tooltip .tooltip-inner {
+        background: #2ca7f0
+    }
+
+    .countdown-timer ul li {
+        background: #ea3294 !important
+    }
+
+    .btn-group.btn-group-switcher .btn {
+        box-shadow: 0 0 0 1px #46cff1 inset !important;
+        color: #46cff1 !important
+    }
+
+    .btn-group.btn-group-switcher .btn.active,
+    .btn-group.btn-group-switcher .btn:active {
+        background: #46cff1 !important;
+        color: #fff !important
+    }
+
+    .btn-group.btn-group-switcher .btn:focus {
+        box-shadow: 0 0 0 1px #46cff1 inset !important
+    }
+
+    .conference-in-numbers .in-numbers-dots .in-numbers-dot.in-numbers-dot-primary {
+        background-color: #ea3294
+    }
+
+    .conference-in-numbers .in-numbers-dots .in-numbers-dot.in-numbers-dot-secondary {
+        background-color: #46cff1
+    }
+
+    .conference-in-numbers .in-numbers-dots .in-numbers-dot.in-numbers-dot-tertiary {
+        background-color: #2affe6
+    }
+
+    .event-sponsors-alerts .alert.alert-info.alert-dashed {
+        border-color: #46cff1
+    }
+
+    .box .angled-header-tag {
+        background: #46cff1
+    }
+
+    .heysummit-checkout-step-content mark {
+        background-color: transparent;
+        color: #46cff1
+    }
+
+    mark.mark-primary {
+        color: #ea3294;
+        background: rgba(239.25, 101.25, 174.75, 0.08)
+    }
+
+    mark.mark-secondary {
+        color: #46cff1;
+        background: rgba(116.25, 219.0, 244.5, 0.08)
+    }
+
+    mark.mark-tertiary {
+        color: #2affe6;
+        background: rgba(95.25, 255.0, 236.25, 0.08)
+    }
+
+    .alert.alert-info a {
+        color: #46cff1
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body.focused #content-container {
+        padding-bottom: 0;
+    }
+
+    #page-container>footer>div:nth-child(2):not(.dark-mode) {
+        padding-top: 50px;
+    }
+
+    .talks #content-container,
+    .speakers #content-container,
+    .agenda #content-container,
+    .categories #content-container,
+    .talks #content-container,
+    .attendee #content-container,
+    .replays #content-container,
+    .unsubscribe #content-container {
+        padding-bottom: 150px !important;
+    }
+
+    .checkout #content-container {
+        padding-bottom: 200px !important;
+    }
+
+    .not-home #content-container {
+        padding-top: 85px;
+    }
+
+    .home header,
+    .not-home header {
+        box-shadow: 0px 6px 24px rgba(78, 40, 76, 0.16);
+        background: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .not-home header {
+        position: inherit;
+    }
+
+    header .navbar {
+        padding: 20px;
+    }
+
+    header .navbar-brand img {
+        height: 35px;
+    }
+
+    header .navbar .navbar-nav .nav-item .nav-link {
+        color: #AA9AA8;
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: all 200ms ease;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    header .navbar .navbar-nav .nav-item.active .nav-link {
+        color: #BF2979;
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 700;
+    }
+
+    header .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #BF2979;
+    }
+
+    header .register-btn a {
+        color: #fff !important;
+        background: #EA3294;
+        border-radius: 5px;
+        margin-left: 15px;
+        transition: all 200ms ease;
+    }
+
+    header .register-btn a:hover {
+        background: #BF2979;
+    }
+
+    .talks-in-session-cta {
+        display: none;
+        padding: 125px 0 45px;
+    }
+
+    .event-sponsors-header,
+    .event-sponsors-alerts {
+        display: none;
+    }
+
+    /*countdown timer*/
+    #pb-block-114854 {
+        padding-top: 120px !important;
+        background: #FFFAFF;
+    }
+
+    #pb-block-114854 p {
+        display: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 49px;
+        letter-spacing: 0.15em;
+        color: #C6BDC5;
+        text-transform: uppercase;
+    }
+
+    .countdown-timer ul li {
+        background: linear-gradient(141.82deg, #EA3294 13.44%, #79C9DD 86.34%) !important;
+        font-family: 'kimchi', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 120px !important;
+        line-height: 33px !important;
+        border: none;
+        padding: 50px 40px 32px !important;
+        border-radius: 10px;
+    }
+
+    .countdown-timer ul li span {
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 0.21em;
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-transform: uppercase;
+    }
+
+    @media (max-width:749px) {
+        .countdown-timer ul li {
+            font-size: 90px !important;
+            line-height: 33px !important;
+            padding: 30px 20px 20px !important;
+        }
+
+        .countdown-timer ul li span {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width:649px) {
+        #pb-block-114854 {
+            padding-top: 100px !important;
+        }
+    }
+
+    @media (max-width:449px) {
+        .countdown-timer ul li:nth-of-type(3) {
+            margin-right: 0;
+        }
+
+        .countdown-timer ul li:last-child {
+            display: none;
+        }
+
+        .countdown-timer.countdown-centered {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    /* registration form */
+    #pb-block-114855 {
+        padding: 60px 20px 0px !important;
+        background: #FFFAFF;
+    }
+
+    #pb-block-114855 h2 {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+    }
+
+    #pb-block-114855 .form-group .form-control {
+        background: #fff;
+        border: 1px solid #9E81C4;
+        z-index: 1;
+        position: relative;
+    }
+
+    #pb-block-114855 .form-group .form-control::placeholder {
+        font-family: 'sofia-pro', sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 21px;
+        color: #DACDED !important;
+    }
+
+    #pb-block-114855 .btn.btn-primary.btn-with-border {
+        position: relative;
+        z-index: 1;
+        background: #E83594 !important;
+        color: #fff !important;
+        border: 2px solid transparent !important;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: transparent;
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 25px 35px;
+        line-height: 100%;
+        transition: all 200ms ease;
+    }
+
+    #pb-block-114855 .btn.btn-primary.btn-with-border:hover {
+        background: #FFFAFF !important;
+        border: 2px solid #E83594 !important;
+        color: #E83594 !important;
+    }
+
+    /* featured talks */
+    #pb-block-114860 {
+        background: #EEFFFF;
+        padding-bottom: 120px !important;
+    }
+
+    #pb-block-114860 .event-featured-talks {
+        display: none;
+    }
+
+    #pb-block-114860 .multi-image-thumb img {
+        border-radius: 50% !important;
+    }
+
+    #pb-block-114860 ul.grid-scroller-full-width.grid-scroller-shape-rectangle li {
+        height: 370px !important;
+    }
+
+    #pb-block-114860 ul.grid-scroller-full-width.grid-content-info-card li {
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgba(1, 93, 95, 0.15);
+        border-radius: 10px;
+        border: none;
+    }
+
+    #pb-block-114860 .grid-content-info-card-sub-headline a {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #90ACAD !important;
+    }
+
+    #pb-block-114860 .heysummit-animate.heysummit-animate-ready {
+        height: 400px !important;
+    }
+
+    #pb-block-114860 .featured-talk-title {
+        font-family: 'kimchi', sans-serif;
+        font-size: 56px;
+        line-height: 80%;
+        color: #049194;
+    }
+
+    #pb-block-114860 .featured-talk-speakers {
+        font-family: 'kimchi', sans-serif;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 100%;
+        color: #5F8485;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer .footer-top-promotion-bar {
+        display: none;
+    }
+
+    body.focused footer {
+        height: 0;
+    }
+
+    .not-home #footer-register {
+        width: 100%;
+        position: relative;
+        background: rgb(121, 201, 221);
+        background: linear-gradient(145deg, rgba(121, 201, 221, 1) 0%, rgba(234, 50, 148, 1) 100%);
+        padding: 100px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #footer-register img {
+        width: 100%;
+        max-width: 490px;
+    }
+
+    #footer-register a {
+        display: block;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: transparent;
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        max-width: 300px;
+        padding: 25px 0;
+        margin: 0 auto;
+        line-height: 100%;
+        transition: all 200ms ease;
+    }
+
+    #footer-register a:hover {
+        background: #fff;
+        color: #EA3294;
+    }
+
+    #footer-register h2.date {
+        font-family: 'sofia-pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 115%;
+        letter-spacing: 0.52em;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        margin: 35px 0 55px;
+    }
+
+    @media (max-width: 649px) {
+        #footer-register {
+            padding: 100px 40px;
+        }
+
+        #footer-register h2.date {
+            font-size: 18px;
+            margin: 20px 0 30px;
+        }
+    }
+
+    .disc {
+        background: url('https://heysummit-public-media.s3.amazonaws.com/rethink/img/disc.svg') no-repeat;
+        position: absolute;
+        z-index: -1;
+        opacity: .8;
+    }
+
+    @media (max-width:649px) {
+        .disc {
+            display: none;
+        }
+    }
+
+    /* interior */
+    .agenda h1.larger,
+    .agenda .page-sub-header,
+    .speakers h1.larger,
+    .speakers .page-sub-header,
+    .checkout h1,
+    .checkout .page-sub-header {
+        display: none !important;
+    }
+
+    .speaker-detail h1.larger,
+    .speaker-detail .page-sub-header {
+        display: block !important;
+    }
+
+    .agenda header .navbar .navbar-nav .nav-item.active .nav-link {
+        color: #4CB8D2 !important;
+    }
+
+    .speakers header .navbar .navbar-nav .nav-item.active .nav-link {
+        color: #EA3294 !important;
+    }
+
+    .speaker-detail .speakers-hero {
+        display: none;
+    }
+
+    .agenda-hero,
+    .speakers-hero,
+    .checkout-hero {
+        background: #F0FCFF;
+        margin-top: -75px;
+        text-align: center;
+        padding: 190px 20px 150px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .speakers-hero {
+        background: #FFFAFF;
+    }
+
+    .checkout-hero {
+        background: #FFF8F8;
+        padding-bottom: 60px;
+    }
+
+    .agenda-hero h2,
+    .speakers-hero h2,
+    .checkout-hero h2 {
+        font-family: 'kimchi', sans-serif;
+        font-weight: normal;
+        font-size: 128px;
+        line-height: 70%;
+        color: #4CB8D2;
+        margin: 35px 0 50px;
+    }
+
+    .speakers-hero h2 {
+        color: #E83594;
+    }
+
+    .checkout-hero h2 {
+        color: #F9B6AE;
+    }
+
+    .agenda-hero h3,
+    .speakers-hero h3,
+    .checkout-hero h3 {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 115%;
+        letter-spacing: 0.5em;
+        color: #8FD9EB;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .speakers-hero h3 {
+        color: #F5A0CD;
+    }
+
+    .checkout-hero h3 {
+        color: rgba(249, 182, 174, 0.7);
+    }
+
+    .agenda-hero p,
+    .speakers-hero p,
+    .checkout-hero p {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 145%;
+        color: #679EAB;
+        width: 100%;
+        max-width: 615px;
+        margin: 0 auto;
+    }
+
+    .speakers-hero p {
+        color: #D76BA4;
+    }
+
+    @media (max-width:549px) {
+
+        .agenda-hero,
+        .speakers-hero,
+        .checkout-hero {
+            padding-bottom: 100px;
+        }
+
+        .agenda-hero h3,
+        .speakers-hero h3,
+        .checkout-hero h3 {
+            font-size: 18px;
+        }
+
+        .agenda-hero h2,
+        .speakers-hero h2,
+        .agenda-hero h2 {
+            font-size: 72px;
+            margin: 20px 0;
+        }
+
+        .agenda-hero p,
+        .speakers-hero p,
+        .checkout-hero p {
+            font-size: 21px;
+            line-height: 145%;
+        }
+    }
+
+    /* speakers specific */
+    .speakers #content-container {
+        background: #fff;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 100%);
+        padding-bottom: 150px !important;
+    }
+
+    .speakers .box {
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.05) !important;
+        border: none !important;
+        padding: 30px;
+        transition: all 200ms ease;
+    }
+
+    .speakers .box:hover {
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.10) !important;
+    }
+
+    .speakers .box .box-top-right-badge {
+        display: none;
+    }
+
+    .speakers img.rounded {
+        border-radius: 50% !important;
+    }
+
+    .speakers .speaker-tile-categories {
+        display: none;
+    }
+
+    .speakers .speaker-tile-info b.color-blue {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 100%;
+        color: #E83594 !important;
+    }
+
+    .speakers .speaker-tile-info p.color-grey-medium {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #F5A0CD !important;
+    }
+
+    .speakers .speaker-tile-info p.color-grey-medium b {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #D76BA4 !important;
+    }
+
+    .speaker-detail .speaker-bio {
+        margin-top: 75px;
+    }
+
+    @media (max-width:575px) {
+        .speakers .box {
+            padding: 30px;
+            text-align: center;
+        }
+    }
+
+    /* agenda specific */
+    .agenda #content-container {
+        padding-bottom: 150px !important;
+    }
+
+    #talks-list-container {
+        width: 100%;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+
+    .agenda .box,
+    .agenda .box:hover {
+        background: #FFFFFF;
+        border: 1px solid #CAD1D2;
+        box-sizing: border-box;
+        box-shadow: 0px 6px 25px rgba(1, 93, 95, 0.15);
+        border-radius: 10px;
+        transition: all 200ms ease;
+        padding: 35px 40px 40px;
+    }
+
+    .agenda .box:hover {
+        box-shadow: 0px 6px 25px rgba(1, 93, 95, 0.2) !important;
+        border-color: rgba(101, 131, 138, 0.5) !important;
+    }
+
+    .agenda .box .box-top-right-badge {
+        display: none;
+    }
+
+    .agenda .box h3 {
+        font-family: 'kimchi', sans-serif;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 80%;
+        color: #65838A;
+        margin-bottom: 15px !important;
+    }
+
+    .agenda .box .multi-image-thumb img.rounded {
+        border-radius: 50% !important;
+    }
+
+    .agenda .speaker-details .speaker-name {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 100%;
+        color: #5F8485 !important;
+    }
+
+    .agenda .speaker-details .speaker-title {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #90ACAD !important;
+    }
+
+    .agenda .speaker-details .cta {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 80%;
+        color: #4CB8D2 !important;
+    }
+
+    .agenda .talk-date {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 80%;
+        color: #8BADB6 !important;
+        text-transform: uppercase;
+    }
+
+    .agenda .schedule-day-container h1 {
+        font-family: 'kimchi', sans-serif;
+        font-weight: normal;
+        font-size: 96px;
+        line-height: 70%;
+        color: #FECF0C;
+        margin-bottom: 40px;
+        width: 95%;
+    }
+
+    .agenda .schedule-day-container.schedule-day-2 h1 {
+        color: #F89E93;
+    }
+
+    .agenda .schedule-day-container.schedule-day-3 h1 {
+        color: #5CACE6;
+    }
+
+    .agenda .schedule-day-container h2.convert-date-to-local {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 49px;
+        letter-spacing: 0.15em;
+        color: #FECF0C;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .agenda .schedule-day-container.schedule-day-2 h2.convert-date-to-local {
+        color: rgba(248, 158, 147, 0.7);
+    }
+
+    .agenda .schedule-day-container.schedule-day-3 h2.convert-date-to-local {
+        color: rgba(92, 172, 230, 0.7);
+    }
+
+    @media (max-width:549px) {
+        .agenda .schedule-day-container h1 {
+            font-size: 68px;
+        }
+    }
+
+    .talks-detail .box.box-shadow {
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.05) !important;
+        border: none !important;
+        padding: 30px;
+        transition: all 200ms ease;
+    }
+
+    .talks-detail .box.box-shadow:hover {
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .talks-detail h1,
+    .speaker-detail h1 {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 900;
+    }
+
+    /* checkout specific */
+    .checkout .btn.btn-primary.blue {
+        background: #F89E93;
+    }
+
+    .checkout .tickets-plan-box {
+        box-shadow: none;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .checkout .tickets-plan-box.box.box-is-active,
+    .checkout .box.box-is-active:hover {
+        border: none;
+        box-shadow: none;
+    }
+
+    .checkout .tickets-plan-box .box-top-right-badge.keep-inside {
+        border-radius: 0px;
+        right: calc(50% - 40px);
+    }
+
+    .checkout .tickets-plan-box hr {
+        width: 27px;
+        height: 2px;
+        background: #F89E93;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .checkout .tickets-plan-box h3,
+    .checkout .tickets-plan-box h2 {
+        font-family: 'kimchi', sans-serif;
+        font-weight: normal;
+        font-size: 79px;
+        line-height: 70%;
+        color: #313D4D;
+    }
+
+    .checkout .tickets-plan-box h2 {
+        color: #F89E93;
+        padding: 15px 0;
+    }
+
+    .checkout .text-small {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 115%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #939AA4;
+    }
+
+    @font-face {
+        font-family: "kimchi";
+        src: url("https://heysummit-public-media.s3.amazonaws.com/rethink/kimchi/kimchi.woff2") format("woff2"), url("https://heysummit-public-media.s3.amazonaws.com/rethink/kimchi/kimchi.woff") format("woff"), url("https://heysummit-public-media.s3.amazonaws.com/rethink/kimchi/kimchi.otf") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @import url("https://p.typekit.net/p.css?s=1&k=nek6tfx&ht=tk&f=24537.24539.24545.24547.24549&a=418287&app=typekit&e=css");
+
+    @font-face {
+        font-family: "sofia-pro";
+        src: url("https://use.typekit.net/af/b4b708/00000000000000003b9b46f5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"), url("https://use.typekit.net/af/b4b708/00000000000000003b9b46f5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"), url("https://use.typekit.net/af/b4b708/00000000000000003b9b46f5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    @font-face {
+        font-family: "sofia-pro";
+        src: url("https://use.typekit.net/af/02ad94/00000000000000003b9b46f3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/02ad94/00000000000000003b9b46f3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/02ad94/00000000000000003b9b46f3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "sofia-pro";
+        src: url("https://use.typekit.net/af/227c77/00000000000000003b9b46ef/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/227c77/00000000000000003b9b46ef/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/227c77/00000000000000003b9b46ef/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "sofia-pro";
+        src: url("https://use.typekit.net/af/4cc789/00000000000000003b9b46ed/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/4cc789/00000000000000003b9b46ed/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/4cc789/00000000000000003b9b46ed/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "sofia-pro";
+        src: url("https://use.typekit.net/af/4526e4/00000000000000003b9b46f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/4526e4/00000000000000003b9b46f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/4526e4/00000000000000003b9b46f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+        font-display: auto;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+
+    #featured-sessions {
+        background: #EEFFFF;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    #featured-sessions .section-heading h3 {
+        color: rgba(4, 145, 148, 0.7);
+    }
+
+    #featured-sessions .section-heading h2 {
+        color: #049194;
+        padding-bottom: 60px;
+    }
+</style>
+
+<style>
+    /* div -1 */
+
+
+    @font-face {
+        font-family: 'WistiaPlayerInterNumbersSemiBold';
+        font-feature-settings: 'tnum'1;
+        src: url(data:application/x-font-woff;charset=utf-8;base64,d09GMk9UVE8AAAaMAAwAAAAACgAAAAZBAAMD1wAAAAAAAAAAAAAAAAAAAAAAAAAADYpwGhQbIBwqBmAAgTIBNgIkAzAEBgWDGgcgGykJEZWkARP8KHCbm2tEznyIN98tPTUk9Ig3oiVV3pbDIzXa+f/fZgXpALFTZhBoMVFC9cp036dXvRKVmVnsxe+D+1NDQI5lG7ikZWEINIElTeBIdnxlhauQ5GQtoLHA/wN0riVdSx5xgbxF3KTbgnjVQ4B9P7YqCx7FpEZK+6ilx0AoopUh4aExJEKmkU+0ncdr4iFfKhdSFD9y91LCRaxNbVqvi0dND3rxI7ndUDR7EiwT3bhiua9krFA0oepCy2hCjwmjnjDjKjNTDz2ZuHtN8820Wfw/l8u4w4yV/f8/6uscs5rmiN00LcP4hAofyZUSyS3WinX0RGFFtnGrjj36x6dlNa57+PLTlrUisH2n9orfgd+R34XfDd0NsWDXwfwhvKHpbs3UBni37dBlPvO4KYn/PgylilcgSdw6sjsSSxsRGfIJgqhi14bKZCHcQvjUh/+3HMotTYrGLVYCxyMFjEnYC98yTAp6atAKVxaZ9eu2NMji8WTj4w/Y34elD60PPwb5bEywLqAX/amwmUo6TBCy14N/TL44jb3sE5JdUIPXXI0RBSoGt3BUObn4agKGIxxQhlyQacbstK4fS2mZoBtFNQ1bd+4zND2vQu6anl7gWFOj8MV2DVMtU44xMhpwElrrjA7zO5IqWojd/v1Vso6cqp91zC2YrGhDOy07Iqyza2q9smDIwUYek0AWbCt/8x78QmrzayQ6xtpmqfCYsLfgU9HdeP3UqutZTTNd/9Q8k08XzXzIxSdvLPda8YaeeZnkxUwql0nDKyUYdaWZjGAy7UDLHpVqBVHTxSV0wBy21El9u/491ik2J3YkdiP2LPZL41RBeeNUWtp97Bbn0Ee1g9wr9qqV/X+4R9nlPX03743dylnaXZyNp8v58yLOsFYCbUnCVQzjN+5QhlmKccO7aMkueWJggROd4qnw2x5LydUcg/NRamE3XMlkGovpRWPKWEavP74P2O1RANM/3gIIPJj7TX+lqU2geQuaBx4B/7cWAOx0ucTiEHYJU9y5DBuUMYNIHeHZz9tn+Fw2G5EBTqUlHRfRi4eB5wNlJsRsv5k4b6HyFkhIC6BO4LzPbWhW7rbCcxubeKHOc6UaBKZBMMd4j8XuRUynOCCa4EMfF9grkI1NcTaSAVtk1nrIOwFfeEBlQw4f4phb6zHzBOm0ZZ0dBcaZRVdYIo5xYiyOMEWONwQHmjKGE//VuRBgul1QrpyxmMvF4vGj0xfuuQrNt4tVTsRhEnjY9AuKa1FVLSEneQWzFd5WbO7hasX08ONUOVQgwQuVqACFXkSoIoUgK1hJEkAgbkG5CjqBS5wrRFuY2IfVwhRnLsVyZTZpatveGR4yEbYqbE6J80nM4aa+LD7Oqmr8PdSJFUQVynmgN4lerGQV1+uLdYzdOFWHPW/iK2gIQayhizQ0NMwyvBEBlrDczRfmU40CTtAHqLQGnjQG8MYkxm1MwJuTqjHwVCu9iRJ1C8ojWGHxUYowH0c5X57zpXquvlw0wzHHGMTfufxiJ1psFJTzq6nGeDvHF4LgmHHWCUViZBaInRn+cswnBi460RBPRYg9TRUQ0CZUC5LAT0qLLu50FpdTeBhjGf7/h4dg9hE0uqsBx/saOcYRDIfnOhfzGFBHyizcJK3p2edUjWrC0rn1aGjXtfVUCHMAKKhlxV8eTEIcV2jCOdKiqahv/MisrfRQVnxPJoOU62mR6pu2ZllIzo8zOZqQB7kWJXW2/c0aihata5PcIVJKfFRgHAETmEQVTCELptGMGcyigTnMJ1voUVN6uCZS9pV2hrwl7FYMvBwtUSd7L7E5qP9t7BIPRF7EcmA9ct2nIPHrxgWajtDltbXuBLuaY6qRZGa5ZlX5anfR0lYXaHUzVSFjZa8rfdhZ8rKXFZg21LVL5LFjI5TlDIbwnFGHE2dypHs6Q50N015dpOgLONEUlOqoiQgIaeCsjMq9gITDKwRMieQgKUy9UQY1BTFYZU2KpE2SkILMIjW8IdFwIKmMaK8oClJVssAEtFnz5dQ1s+w6EZoNGtPGQfzx+aoE8ikiP8GCYOWtgB+HBdWDaxACAZInVq14dZI85RRDvZGIghyONw59KV/BBEQ02P1ER8hmNGiURT2hQP8WfAY=);
+    }
+
+
+
+    body #page-container {
+        min-height: 100%;
+        position: relative;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    user agent stylesheet div {
+        display: block;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+    }
+
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<style>
+    /* div 0 */
+
+
+    body.focused #content-container {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 767.98px) {
+
+        body #content-container,
+        body.focused #content-container {
+            padding-bottom: 0;
+        }
+    }
+
+    body.focused #content-container {
+        padding-bottom: 259px;
+    }
+
+    body #content-container.overflow-hidden {
+        overflow: hidden;
+    }
+
+    @media (max-width: 575.98px) {
+        body #content-container {
+            padding-bottom: 0;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        body #content-container {
+            padding-bottom: 736px;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+        body #content-container {
+            padding-bottom: 747px;
+        }
+    }
+
+    body #content-container {
+        padding-bottom: 941px;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+    }
+
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<style>
+    /* div 1 */
+
+    /* element.style {} */
+
+    body #page-container {
+        min-height: 100%;
+        position: relative;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+
+<style>
+    /* div two */
+
+    element.style {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    #pb-block-114860 {
+        background: #EEFFFF;
+        padding-bottom: 120px !important;
+    }
+
+    .pb-container .pb-block,
+    .pb-container .pb-block .pb-block-editable-container {
+        position: relative;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<style>
+    /* div 3 */
+    #pb-block-114860 .event-featured-talks {
+        display: none;
+    }
+
+    .pb-container .container {
+        position: relative;
+    }
+
+    .container,
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<style>
+    /* h2 */
+
+
+    @media (max-width: 575.98px) {
+        h2.smaller {
+            font-size: 18px;
+            line-height: 31px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        h2.smaller {
+            font-size: 24px;
+            line-height: 41px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        .pb-container h2 {
+            font-size: 22px;
+            line-height: 37px;
+        }
+
+        .pb-container h2 {
+            font-size: 28px;
+            line-height: 45px;
+        }
+
+        h2.smaller {
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        h2 {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 4px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        h2 {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 4px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        h2 {
+            font-size: 25px;
+            line-height: 42px;
+            margin-bottom: 14px;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+        h2 {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+
+    h2 {
+        font-size: 37px;
+        line-height: 62px;
+        margin-bottom: 17px;
+    }
+
+    h1,
+    h2 {
+        font-family: "Avenir Next LT W01 Bold", "Helvetica Neue", sans-serif;
+        color: #333;
+    }
+
+    h2,
+    h4 {
+        margin-top: 0;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: .5rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label {
+        margin-bottom: .5rem;
+    }
+
+    dl,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-top: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+    }
+
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /*  h2 also */ ********-->
+<style>
+    #featured-sessions .section-heading h2 {
+        color: #049194;
+        padding-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        /* this is the determining line  vvv */
+        font-family: 'kimchi', sans-serif;
+        font-size: 128px;
+        line-height: 70%;
+        font-weight: normal;
+        margin: 30px 0 40px;
+    }
+
+    @media (max-width: 991.98px) {
+        .pb-container h2 {
+            font-size: 22px;
+            line-height: 37px;
+        }
+    }
+
+    .pb-container h2 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 575.98px) {
+        h2 {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 4px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        h2 {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 4px;
+        }
+    }
+
+
+    @media (max-width: 991.98px) {
+        h2 {
+            font-size: 25px;
+            line-height: 42px;
+            margin-bottom: 14px;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+        h2 {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+
+    h2 {
+        font-size: 37px;
+        line-height: 62px;
+        margin-bottom: 17px;
+    }
+
+    h1,
+    h2 {
+        font-family: "Avenir Next LT W01 Bold", "Helvetica Neue", sans-serif;
+        color: #333;
+    }
+
+    h2,
+    h4 {
+        margin-top: 0;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: .5rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label {
+        margin-bottom: .5rem;
+    }
+
+    dl,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-top: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    user agent stylesheet h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .section-heading {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-style: normal;
+        padding: 125px 20px 0;
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    #featured-sessions {
+        background: #EEFFFF;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+    }
+
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* ul */ -->
+<style>
+    element.style {
+        height: 300px;
+    }
+
+    #pb-block-114860 .heysummit-animate.heysummit-animate-ready {
+        height: 400px !important;
+    }
+
+    .heysummit-animate.heysummit-animate-ready {
+        opacity: 1;
+        -webkit-transition: opacity 350ms ease-out;
+        transition: opacity 350ms ease-out;
+    }
+
+    @media (max-width: 575.98px) {
+
+        ul.grid-scroller-full-width {
+            width: 100% !important;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+
+        ul.grid-scroller-full-width {
+            width: 100% !important;
+        }
+
+        ul.grid-scroller-full-width {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            width: 10000px;
+        }
+    }
+
+    .heysummit-animate {
+        opacity: 0;
+        position: relative;
+        height: 0;
+        overflow: hidden !important;
+        -webkit-transition: opacity 350ms ease-out;
+        transition: opacity 350ms ease-out;
+    }
+
+    address,
+    dl,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-bottom: 1rem;
+    }
+
+    dl,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-top: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* <li> */ -->
+<style>
+    element.style {
+        left: 3548.61px;
+    }
+
+    #pb-block-114860 ul.grid-scroller-full-width.grid-content-info-card li {
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgb(1 93 95 / 15%);
+        border-radius: 10px;
+        border: none;
+    }
+
+    #pb-block-114860 ul.grid-scroller-full-width.grid-scroller-shape-rectangle li {
+        height: 370px !important;
+    }
+
+    @media (max-width: 575.98px) {
+
+        ul.grid-scroller-full-width.grid-content-info-card li {
+            padding: 16px;
+            width: 93%;
+            height: 230px;
+        }
+
+        @media (max-width: 767.98px) {}
+
+        ul.grid-scroller-full-width.grid-content-info-card li {
+            padding: 16px;
+            width: 90%;
+            height: 230px;
+        }
+
+        ul.grid-scroller-full-width.grid-content-info-card li {
+            padding: 40px;
+        }
+
+        ul.grid-scroller-full-width.grid-scroller-shape-rectangle li {
+            width: 515px;
+            height: 300px;
+        }
+
+        .heysummit-animate>.heysummit-animate-visible {
+            opacity: 1;
+        }
+
+        ul.grid-scroller-full-width li {
+            float: left;
+            border-radius: 15px;
+            border: 1px solid #E2E2E2;
+            padding: 20px;
+            margin-right: 50px;
+            position: relative;
+        }
+
+        .heysummit-animate>* {
+            opacity: 0;
+            position: absolute !important;
+            width: 100%;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        ul.grid-scroller-full-width {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            width: 10000px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        body {
+            font-family: 'sofia-pro', sans-serif;
+        }
+
+        body {
+            background: #FFF;
+            overflow-x: hidden;
+            font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+        }
+
+        body,
+        h4 a {
+            color: #777;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        body,
+        caption {
+            text-align: left;
+        }
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* div 4*/ -->
+<style>
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* div 5 */ -->
+<style>
+    element.style {
+        height: 85px;
+        width: 85px;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top>.img,
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top>img {
+        float: left;
+        margin: 0 25px 25px 0;
+    }
+
+    .multi-image-thumb {
+        position: relative;
+        width: 100%;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    .multi-image-thumb:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* img */ -->
+<style>
+    #pb-block-114860 .multi-image-thumb img {
+        border-radius: 50% !important;
+    }
+
+    .multi-image-thumb img:first-child:nth-last-child(1) {
+        max-width: 100% !important;
+    }
+
+    .multi-image-thumb img {
+        position: absolute !important;
+    }
+
+    .rounded {
+        border-radius: .25rem !important;
+    }
+
+    .img-fluid,
+    .img-thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    /* img[Attributes Style] {} */
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .multi-image-thumb:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* b */ -->
+<style>
+    #pb-block-114860 .featured-talk-speakers {
+        /* font-family: 'kimchi', sans-serif; */
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 100%;
+        color: #5F8485;
+    }
+
+    @media (max-width: 575.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top b {
+            margin-top: 4px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top b {
+            margin-top: 4px;
+        }
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top b {
+        font-size: 21px;
+        line-height: 34px;
+        margin-top: 11px;
+        width: calc(100% - 115px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top b,
+    ul.row-list li .highlight-right,
+    ul.row-list li .row-list-content b {
+        color: #333;
+        font-family: AvenirNextLTW01-Medium, "Helvetica Neue", sans-serif;
+    }
+
+    .btn,
+    .font-medium,
+    b,
+    strong {
+        font-family: AvenirNextLTW01-Medium, "Helvetica Neue", sans-serif;
+    }
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* span */ -->
+<style>
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+        color: #ea3294;
+    }
+
+    @media (max-width: 575.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+        font-family: AvenirNextLTW01-Medium, "Helvetica Neue", sans-serif;
+        color: #FF447E;
+        font-size: 17px;
+        line-height: 29px;
+        width: calc(100% - 115px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* a */ -->
+<style>
+    #pb-block-114860 .grid-content-info-card-sub-headline a {
+        font-family: 'sofia-pro', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #90ACAD !important;
+    }
+
+    a {
+        color: #ea3294;
+    }
+
+    a {
+        color: #FF447E;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+        color: #ea3294;
+    }
+
+    @media (max-width: 575.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top .grid-content-info-card-sub-headline {
+        font-family: AvenirNextLTW01-Medium, "Helvetica Neue", sans-serif;
+        color: #FF447E;
+        font-size: 17px;
+        line-height: 29px;
+        width: calc(100% - 115px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+    ul.grid-scroller-full-width.grid-content-info-card li .grid-content-info-card-top {
+        overflow: auto;
+        text-align: left;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<!-- /* p */ -->
+<style>
+    /* element.style {} */
+
+    #pb-block-114860 .featured-talk-title {
+        font-size: 56px;
+        line-height: 80%;
+        color: #049194;
+    }
+
+    @media (max-width: 575.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        ul.grid-scroller-full-width.grid-content-info-card li p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+
+    ul.grid-scroller-full-width.grid-content-info-card li p {
+        display: block;
+        margin-bottom: 0;
+        font-size: 21px;
+        line-height: 34px;
+    }
+
+    @media (max-width: 991.98px) {
+        p {
+            font-size: 16px;
+            line-height: 27px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h3,
+    p {
+        line-height: 29px;
+    }
+
+    address,
+    dl,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-bottom: 1rem;
+    }
+
+    dl,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-top: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+
+    ul.grid-scroller-full-width {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 10000px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    body {
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    body {
+        background: #FFF;
+        overflow-x: hidden;
+        font-family: AvenirNextLTW01-Regular, "Helvetica Neue", sans-serif;
+    }
+
+    body,
+    h4 a {
+        color: #777;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #fff;
+    }
+
+    body,
+    caption {
+        text-align: left;
+    }
+
+    :root {
+        --brand: #05E0E4;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+</style>
+
+<div id="pb-block-114859" class="pb-block pb-block-type-html_code text-center "
+    style="padding-bottom: 0px; padding-top: 0px;">
+
+
+
+
+
+    <style>
+        #featured-sessions {
+            background: #EEFFFF;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        #featured-sessions .section-heading h3 {
+            color: rgba(4, 145, 148, 0.7);
+        }
+
+        #featured-sessions .section-heading h2 {
+            color: #049194;
+            padding-bottom: 60px;
+        }
+    </style>
+
+    <section id="featured-sessions">
+        <div class="section-heading">
+            <h3>Featured Sessions</h3>
+            <h2>Insights For Your Journey</h2>
+        </div>
+    </section>
+
+
+
+
+
+</div>
+
+<div id="pb-block-114860" class="pb-block pb-block-type-component text-center "
+    style="padding-bottom: 0px; padding-top: 0px;">
+
+
+
+
+
+
+
+
+
+    <div class="event-featured-talks container">
+        <h2 class="smaller featured-talks-title">
+
+
+            Featured talks
+
+
+        </h2>
+        <p class="no-margin-bottom">
+            Not sure what to watch? Here are some talks you won't want to miss.
+        </p>
+        <div class="content-vertical-spacer-xs"></div>
+    </div>
+
+    <ul class="featured-talks-cards grid-scroller-full-width grid-scroller-shape-rectangle grid-content-info-card heysummit-animate heysummit-animate-ready"
+        data-heysummit-animate-style="scroll-horizontal" data-heysummit-animate-delay="4000"
+        data-heysummit-animate-duration="1000" data-heysummit-animate-left-align-relative-to=".positional-container"
+        style="height: 370px; width: 7910px;" id="heysummit-animate-mlco29g3cj35n8p87wyjn">
+
+        <li data-href="/talks/normal-was-never-the-goal-how-to-build-a-mission-driven-business-from-the-ground-up/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="1" style="left: 1217.75px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/kuBaXp8StUgJ5tPfp5w5jH_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Sarah Shewey</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="None" target="_blank">CEO, Happily.io</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Normal Was Never the Goal: how to build a mission-driven business from the ground up
+            </p>
+
+        </li>
+
+        <li data-href="/talks/harnessing-your-creativity-to-create-an-authentic-personal-brand/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="2" style="left: 1782.75px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/uvQZ7xKLu9EGaHmCGdwAW3_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Cait</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://hernameiscait.com" target="_blank">Music Artist, Videographer, Founder &amp; CEO,
+                        Cait, Inc.</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Harnessing Your Creativity to Build an Authentic Personal Brand
+            </p>
+
+        </li>
+
+        <li data-href="/talks/unleash-your-brand-superpower-no-capes-or-boots-required/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="3" style="left: 2347.75px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/n7ADuKj8YvWsZbttFRL3sP_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Gabriela Pereira</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="https://diymfa.com/" target="_blank">Founder, DIY MFA</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Unleash Your Brand's Storytelling Superpower (no capes or boots required)
+            </p>
+
+        </li>
+
+        <li data-href="/talks/email-marketing-for-creators-how-to-build-a-high-converting-landing-page-1/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="4" style="left: 2912.75px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/My7zGnfLuKfa2CNQmXozFS_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Angel Marie</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://www.convertkit.com" target="_blank">Creator Educator, ConvertKit</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Email Marketing For Creators: how to build a high-converting landing page
+            </p>
+
+        </li>
+
+        <li data-href="/talks/creativity-talks-thinking-outside-the-blocks/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="5" style="left: 3477.75px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/zWhcgofquHZvwQ24PURji9_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Allie + Bess</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="None" target="_blank">Founders, Thinking Outside the Blocks</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                How A Healthy Creative Mindset Can Also Serve Your Business
+            </p>
+
+        </li>
+
+        <li data-href="/talks/successdna-the-leadership-shift-to-unlocking-ones-impact-income-flow/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="6" style="left: -3867.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/6ZohtCeJRS22Nsv3j6KvaR_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Alex Kuhn</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://alex-kuhn.com" target="_blank">Founder, Born to Lead</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                SuccessDNA: The Leadership Shift To Unlocking One's Impact &amp; Income Flow
+            </p>
+
+        </li>
+
+        <li data-href="/talks/market-strategy-for-shopify/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="7" style="left: -3302.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/hN8JC2rWEhn2znjFQU2mXZ_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Tyler Prete</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="None" target="_blank">Co-Founder, Rezistance Fitness, Vibes Soap, Shopify</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                From 0-1: My Go to Market Strategy for brands on Shopify
+            </p>
+
+        </li>
+
+        <li data-href="/talks/tech-talk-learn-more-about-teachable/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="8" style="left: -2737.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/M29CmVAYErmajhvEPRjs4W_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Jess Catorc</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://www.teachable.com" target="_blank">Expert at Teachable, Teachable</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Tech Talk: How to Grow Your Online Business with Coaching on Teachable
+            </p>
+
+        </li>
+
+        <li data-href="/talks/how-3-bad-decisions-saved-our-company/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible heysummit-animate-visible-lastitem"
+            data-index="9" style="left: -2172.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/ozemRZeH7iRkjyLr2wzb8h_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Sam Eitzen</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://www.thesnapbar.com" target="_blank">CEO &amp; Co-Founder, The SnapBar &amp; Keep
+                        Your City Smiling</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                How 3 'Bad Decisions' Saved Our Company
+            </p>
+
+        </li>
+
+        <li data-href="/talks/video-marketing-masterclass/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="10" style="left: -1607.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/6XzkugJzWP6rUt6RAfaduW_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Ruben Dua</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://dubb.com" target="_blank">CEO and Founder, Dubb</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Video Marketing Masterclass
+            </p>
+
+        </li>
+
+        <li data-href="/talks/future-proof-your-brand-how-to-grow-your-brand-in-a-time-of-crisis/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="11" style="left: -1042.25px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/USazwTKHD4hgpujZ8X5Tn8_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Juntae DeLane</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="https://www.digitaldelane.com" target="_blank">Founder &amp; Chief Strategist, Digital
+                        Delane</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Future-Proof your Brand: How to Grow Your Brand In A Time of Crisis
+            </p>
+
+        </li>
+
+        <li data-href="/talks/grow-your-brand-with-a-weekly-live-streaming-show/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="12" style="left: -477.255px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/3DscVR8cE99kGZSaiSv57C_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Doc Williams</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://brandfactoryinc.com/" target="_blank">CEO/Founder, Brand Factory Inc</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Grow Your Brand With a Weekly Live Streaming Show
+            </p>
+
+        </li>
+
+        <li data-href="/talks/tech-talk-strategic-networking-on-linkedin/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="13" style="left: 87.7451px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/nCJFyVDdxCmZFGVk3GkvLK_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Yai Vargas</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="http://www.YaiVargas.com" target="_blank">The Latinista, Founder, CEO</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Tech Talk: Strategic Networking on LinkedIn
+            </p>
+
+        </li>
+
+        <li data-href="/talks/behind-the-scenes-see-how-we-build-rethink-2020-summit/"
+            class="featured-talks-card redirect-on-click redirect-on-click-with-style heysummit-animate-visible"
+            data-index="14" style="left: 652.745px;">
+            <div class="grid-content-info-card-top">
+                <div class="multi-image-thumb img" style="height: 85px; width: 85px;">
+
+                    <img class="b-lazy rounded img-fluid b-loaded" width=""
+                        src="https://s3.amazonaws.com/heysummit-production/media/thumbnails/uploads/events/rethink-2020/iSjMDwTiyesvZJJTuJeWze_square_medium.png">
+
+                </div>
+                <b class="featured-talk-speakers">Marquesa Versola</b>
+
+                <span class="grid-content-info-card-sub-headline">
+                    <a href="None" target="_blank">Event Producer</a>
+                </span>
+
+            </div>
+            <p class="featured-talk-title">
+                Behind the Scenes: See How We Built Re:Think 2020 Summit
+            </p>
+
+        </li>
+
+    </ul>
+
+
+    <div class="clearfix">
+        ::after == $0
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var bLazy = new Blazy();
+            bLazy.revalidate();
+        });
+    </script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.selectpicker').selectpicker({
+                template: {
+                    caret: '<i class="far fa-angle-down"></i>'
+                },
+            });
+
+            // Init active_attendee
+
+
+
+
+            var qsJson = parseQueryString(window.location.search);
+            if ('ah' in qsJson) {
+                $.cookie('heysummit_attendee', qsJson.ah, { expires: 60, path: '/' });
+            }
+
+            $(".heysummit-register-form .floating-site-panel-footer").addClass('visible');
+
+            $('input.icheck').iCheck({
+                labelHover: false,
+                cursor: true,
+                checkboxClass: 'icheckbox icheckbox_flat-blue',
+                radioClass: 'iradio iradio_flat-blue'
+            });
+
+            $('input[type=checkbox]').keypress(function (e) {
+                if (e.which == 13) {
+                    $(this).iCheck('toggle');
+                }
+            });
+
+            $(document).on('click', '.add-to-schedule-btn', function (e) {
+                e.preventDefault();
+
+
+            });
+
+            $(document).on("keydown", "#id_register_email", function (e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+                if (code == 13) { // Enter
+                    e.preventDefault();
+                    $(".heysummit-register-by-email-container .register-btn").click();
+                }
+            });
+
+            $(document).on("click", ".heysummit-register-by-email-container .register-btn", function (e) {
+                // "Book my place" Button
+                e.preventDefault();
+                var btn = $(this);
+                var originalButtonHtml = btn.html();
+                btn.addClass('disabled')
+                var ticketID = btn.data("ticketid");
+                var registerContainer = btn.closest(".heysummit-register-by-email-container");
+                var formContainer = registerContainer.find("form.heysummit-register-form");
+                var email = formContainer.find(".register-email-input").val();
+                var ctaTalk = formContainer.find("#id_cta_talk").val();
+                var ctaSpeaker = formContainer.find("#id_cta_speaker").val();
+                var ac = formContainer.find("#id_ac").val();
+                var sc = formContainer.find("#id_sc").val();
+                var utmSource = formContainer.find("#id_utm_source").val();
+                var utmMedium = formContainer.find("#id_utm_medium").val();
+                var utmCampaign = formContainer.find("#id_utm_campaign").val();
+                var refererRef = formContainer.find("#id_referer_ref").val();
+                var httpReferer = formContainer.find("#id_http_referer").val();
+                var isQuickRegistration = btn.data("isquickregistration");
+                var next = "/" // we want relative path for this
+
+                btn.html('<i class="far fa-spinner fa-spin margin-right-2x" data-fa-transform="down-1"></i> One moment...');
+                formContainer.find(".help-block-info").removeClass('hidden');
+                formContainer.find(".help-block-error").addClass('hidden');
+
+                if (!email) {
+                    formContainer.find(".help-block-info").addClass('hidden');
+                    formContainer.find(".help-block-error").html("Enter a valid email and then try again.");
+                    formContainer.find(".help-block-error").removeClass('hidden');
+                    btn.html(originalButtonHtml);
+                    btn.removeClass('disabled')
+                }
+                else {
+                    grecaptcha.execute('6LcvUfUZAAAAALuHWfOsuvCnQUiaSl7N8C18J-1f', { action: 'submit' }).then(function (captcha_token) {
+                        var data = {
+                            'csrfmiddlewaretoken': csrftoken,
+                            'captcha': captcha_token,
+                            'email': email,
+                            'next': next,
+                            'cta_talk': ctaTalk,
+                            'cta_speaker': ctaSpeaker,
+                            'ac': ac,
+                            'sc': sc,
+                            'utm_source': utmSource,
+                            'utm_medium': utmMedium,
+                            'utm_campaign': utmCampaign,
+                            'referer_ref': refererRef,
+                            'http_referer': httpReferer
+                        };
+                        $.ajax({
+                            type: "POST",
+                            url: "/checkout/register/",
+                            data: data,
+                            success: function (response) {
+                                response = $.parseJSON(response);
+                                if (response.attendee_exists) {
+                                    window.location.href = hs_subdir_path + "/attendee/login-magic-link/" + "?email=" + encodeURIComponent(email);
+                                }
+                                else if (response.error_string) {
+                                    formContainer.find(".help-block-info").addClass('hidden');
+                                    formContainer.find(".help-block-error").html(response.error_string);
+                                    formContainer.find(".help-block-error").removeClass('hidden');
+                                }
+                                else if (response.attendee_hash && isQuickRegistration) {
+                                    $.cookie('heysummit_attendee', response.attendee_hash, { expires: 60, path: '/' });
+                                    registerContainer.find(".modal-header, .modal-footer").remove();
+                                    registerContainer.find(".modal-body").html('' +
+                                        '<div class="alert alert-info no-fadeout"><b>Great to have you onboard!</b> You are now registered.</div>' +
+                                        '<div class="content-vertical-spacer-xs"></div>' +
+                                        '<a href="javascript: window.location.reload(false);" class="btn btn-default btn-block blue">Continue</a>');
+                                    return false;
+                                }
+                                else if (response.attendee_hash && ticketID) {
+                                    window.location.href = hs_subdir_path + "/checkout/" + response.next_step + "/?ticket=" + ticketID;
+                                }
+                                else if (response.attendee_hash) {
+                                    window.location.href = hs_subdir_path + "/checkout/" + response.next_step + "/";
+                                }
+                                btn.html(originalButtonHtml);
+
+                            }
+                        });
+                    })
+                }
+            });
+
+            $(document).on("click", ".heysummit-checkout-next-btn", function (e) {
+                e.preventDefault();
+                var btn = $(this);
+                var registerContainer = btn.closest(".heysummit-checkout-container");
+                var registerForm = registerContainer.find(".heysummit-register-form");
+                var errorMsg = registerContainer.find(".heysummit-checkout-error-msg");
+                var originalButtonHtml = btn.html();
+                var stepFormError = null;
+                var step = "";
+
+                btn.html('<i class="far fa-spinner fa-spin margin-right-2x" data-fa-transform="down-1"></i> One moment...');
+                errorMsg.addClass('hidden');
+
+                if (step == "select-tickets") {
+                    stepFormError = validateRegTicketsForm(registerContainer);
+                }
+                else if (step == "select-content") {
+                    stepFormError = validateRegCategoriesAndTalksForm(registerContainer);
+                }
+                else if (step == "complete-order") {
+                    stepFormError = validateRegPermissionsForm(registerContainer);
+                }
+
+                if (stepFormError) {
+                    errorMsg.removeClass('hidden');
+                    errorMsg.html(stepFormError);
+                    btn.html(originalButtonHtml);
+                    $('html, body').animate({ scrollTop: errorMsg.offset().top - 100 }, 250);
+                }
+                else {
+                    var qs = "";
+
+
+                    if (step === "complete-order") {
+
+                        var data = registerForm.serializeArray();
+
+                        grecaptcha.execute('6LcvUfUZAAAAALuHWfOsuvCnQUiaSl7N8C18J-1f', { action: 'submit' }).then(function (captcha_token) {
+                            data.push({ name: "captcha", value: captcha_token });
+
+                            $.ajax({
+                                type: "POST",
+                                url: hs_subdir_path + "/checkout//" + qs,
+                                data: $.param(data),
+                                success: function (response) {
+                                    response = $.parseJSON(response);
+
+                                    if (response.error_string) {
+                                        errorMsg.removeClass('hidden');
+                                        errorMsg.html(response.error_string);
+                                        btn.html(originalButtonHtml);
+                                    } else if (response.attendee_hash) {
+                                        if (response.po_hash) {
+                                            qs = "?po=" + response.po_hash;
+                                        }
+                                        window.location.href = hs_subdir_path + "/checkout//" + qs;
+                                    }
+                                }
+                            })
+                        });
+
+                    } else {
+
+                        $.ajax({
+                            type: "POST",
+                            url: hs_subdir_path + "/checkout//" + qs,
+                            data: registerForm.serialize(),
+                            success: function (response) {
+                                response = $.parseJSON(response);
+
+                                if (response.error_string) {
+                                    errorMsg.removeClass('hidden');
+                                    errorMsg.html(response.error_string);
+                                    btn.html(originalButtonHtml);
+                                } else if (response.attendee_hash) {
+                                    if (response.po_hash) {
+                                        qs = "?po=" + response.po_hash;
+                                    }
+                                    window.location.href = hs_subdir_path + "/checkout//" + qs;
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+
+            $(document).on("click", ".heysummit-checkout-tickets-btn", function (e) {
+                e.preventDefault();
+                var $parent = $(this).closest(".tickets-plan-box");
+                var $ticketCheckbox = $parent.find("input[type=checkbox]");
+
+                if ($ticketCheckbox.is(':checked')) {
+                    $ticketCheckbox.prop('checked', false);
+                    $parent.find('svg:not(.color-white)').removeClass("color-green").addClass("color-" + $(this).data('randomcolor'));
+
+                    if ($parent.find('.sold-out-ribbon').length) {
+                        $(this).hide();
+                    }
+
+                    $parent.removeClass('box-is-active');
+                    $parent.find(".box-top-right-badge").addClass('hidden');
+                    $(this).html('<i class="far fa-plus margin-right-2x" data-fa-transform="down-1"></i>Add to Cart');
+                    $(this).removeClass("btn-secondary").addClass("btn-primary");
+                }
+                else {
+                    $ticketCheckbox.prop('checked', true);
+                    $parent.addClass('box-is-active');
+                    $parent.find(".box-top-right-badge").removeClass('hidden');
+                    $parent.find('svg:not(.color-white)').removeClass("color-" + $(this).data('randomcolor')).addClass("color-green");
+                    $(this).html('<i class="far fa-times margin-right-2x" data-fa-transform="down-1"></i>Remove from Cart');
+                    $(this).removeClass("btn-primary").addClass("btn-secondary");
+                }
+
+                var totalSelected = $('input[id*=ticket-checkbox][type=checkbox]:checked').length;
+                if (totalSelected > 0) {
+                    $(".checkout-label-qty-tickets").html(totalSelected).removeClass("hidden");
+                }
+                else {
+                    $(".checkout-label-qty-tickets").html(totalSelected).addClass("hidden");
+                }
+            });
+
+
+            $(document).ready(function () {
+                filterRegistrationTalks();
+            });
+
+            $(document).on("click", ".heysummit-checkout-categories-btn", function (e) {
+                e.preventDefault();
+                var $catCheckbox = $(this).find("input[type=checkbox]");
+
+                if ($catCheckbox.is(':checked')) {
+                    $catCheckbox.prop('checked', false);
+                    $(this).find('svg:not(.color-white)').removeClass("color-green").addClass("color-" + $(this).data('randomcolor'));
+                    $(this).removeClass('box-is-active');
+                    $(this).find(".box-top-right-badge").addClass('hidden');
+                    $('#heysummit-checkout-add-all-categories-btn').iCheck('uncheck');
+                }
+                else {
+                    $catCheckbox.prop('checked', true);
+                    $(this).addClass('box-is-active');
+                    $(this).find(".box-top-right-badge").removeClass('hidden');
+                    $(this).find('svg:not(.color-white)').removeClass("color-" + $(this).data('randomcolor')).addClass("color-green");
+
+                    // Unhide talks select all
+                    $('.heysummit-checkout-add-all-talks-btn').removeClass("hidden");
+                }
+
+                filterRegistrationTalks();
+            });
+
+            function filterRegistrationTalks() {
+                var checked_categories = [];
+
+                // get checked categories
+                $('.category-checkbox:checked').each(function () {
+                    checked_categories.push(parseInt($(this).val()));
+                });
+
+                $(('.heysummit-checkout-talks-btn')).each(function (t) {
+                    var talk_categories = $(this).data('categorylist');
+
+                    // Find common elements
+                    var intersection = talk_categories.filter(function (n) {
+                        return checked_categories.indexOf(n) !== -1;
+                    });
+
+                    if (intersection.length === 0) {
+                        // hide element
+                        $(this).addClass('hidden');
+
+                        // uncheck box
+                        var $talkCheckbox = $(this).find("input[type=checkbox]");
+                        if ($talkCheckbox.length === 0) { return; }
+                        if ($talkCheckbox.is(':checked')) {
+                            $talkCheckbox.prop('checked', false);
+                            $(this).removeClass('box-is-active');
+                            $(this).find(".box-top-right-badge").addClass('hidden');
+                        }
+
+                    } else {
+                        // show talk
+                        $(this).removeClass('hidden');
+                    }
+                });
+
+                var bLazy = new Blazy();
+                bLazy.revalidate();
+
+                // TODO: uncheck boxes when category deselected
+            }
+
+            $(document).on("click", ".heysummit-checkout-talks-btn", function (e) {
+                e.preventDefault();
+                var $talkCheckbox = $(this).find("input[type=checkbox]");
+
+                if ($talkCheckbox.length === 0) { return; }
+
+                if ($talkCheckbox.is(':checked')) {
+                    $talkCheckbox.prop('checked', false);
+                    $(this).removeClass('box-is-active');
+                    $(this).find(".box-top-right-badge").addClass('hidden');
+                    // Unhide Select All
+                    $('.heysummit-checkout-add-all-talks-btn').removeClass("hidden");
+                }
+                else {
+                    $talkCheckbox.prop('checked', true);
+                    $(this).addClass('box-is-active');
+                    $(this).find(".box-top-right-badge").removeClass('hidden');
+                }
+
+                var totalSelected = $(".heysummit-checkout-talks-btn.box-is-active").length;
+                if (totalSelected > 0) {
+                    $(".checkout-label-qty-content").html(totalSelected).removeClass("hidden");
+                }
+                else {
+                    $(".checkout-label-qty-content").html(totalSelected).addClass("hidden");
+                }
+            });
+
+            $(document).on('ifChanged', '#heysummit-checkout-add-all-talks-btn', function (e) {
+                // If categories are shown, select those, else, select all categories and choose those
+                e.preventDefault();
+
+                var elems = $('.heysummit-checkout-talks-btn:not(.choice-muted)')
+
+                if ($(this).prop('checked')) {
+                    // if no categories are selected, select all
+                    if ($(".heysummit-checkout-categories-btn").find("input[type=checkbox]:checked").length === 0) {
+                        $('#heysummit-checkout-add-all-categories-btn').iCheck('check');
+                    }
+
+                    elems.each(function (index) {
+                        if ($(this).hasClass('hidden')) { return true; } // continue
+                        $(this).find("input[type=checkbox]").prop('checked', false);
+                        $(this).trigger('click');
+                    });
+                }
+                else {
+                    elems.each(function (index) {
+                        $(this).find("input[type=checkbox]").prop('checked', true);
+                        $(this).trigger('click');
+                    });
+                }
+
+            });
+
+            $(document).on('ifChanged', '#heysummit-checkout-add-all-categories-btn', function (e) {
+                e.preventDefault();
+                var elems = $(".heysummit-checkout-categories-btn:not(.choice-muted)");
+
+                if ($(this).prop('checked')) {
+                    elems.each(function (index) {
+                        $(this).find("input[type=checkbox]").prop('checked', false);
+                        $(this).trigger('click');
+                    });
+                }
+                else {
+                    elems.each(function (index) {
+                        $(this).find("input[type=checkbox]").prop('checked', true);
+                        $(this).trigger('click');
+                    });
+                }
+            });
+
+            $(document).on('click', '.heysummit-attendee-logout', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "/attendee/logout/",
+                    data: {
+                        'csrfmiddlewaretoken': csrftoken
+                    },
+                    dataType: 'json',
+                    complete: function (response) { // `success` is not called if response has no data, hence `complete`
+                        if (response.status === 200) {
+                            $.removeCookie('checkout_attendee', { path: '/' });
+                            $.removeCookie('heysummit_attendee', { path: '/' });
+                            $.removeCookie('heysummit_attendee_email', { path: '/' });
+                            $.removeCookie('heysummit_attendee_name', { path: '/' });
+                            window.location.href = hs_subdir_path + "/";
+                        }
+                    }
+                })
+            });
+
+            $(document).on('click', '.reg-giveaway-intent-btn', function (e) {
+                logTweetIntent();
+            });
+
+            $(document).on('click', '.reg-viralincentive-intent-btn', function (e) {
+                var incentiveID = $(this).data('incentiveid');
+                logViralIncentiveIntent(incentiveID);
+            });
+
+            $(document).on('click', '.open-quick-register-btn', function (e) {
+                e.preventDefault();
+                $("#registerAttendeeModal").modal({ 'show': true });
+            });
+
+            $(document).on('click', '.edit-coupon-btn', function (e) {
+                e.preventDefault();
+                $(this).addClass("hidden");
+                $(".cancel-coupon-btn").removeClass("hidden");
+                $("#edit-coupon-box").removeClass("hidden");
+            });
+
+            $(document).on('click', '.cancel-coupon-btn', function (e) {
+                e.preventDefault();
+                $(this).addClass("hidden");
+                $(".edit-coupon-btn").removeClass("hidden");
+                $("#edit-coupon-box").addClass("hidden");
+            });
+
+            $(document).on("keydown", "#new_coupon_code", function (e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+                if (code == 13) { // Enter
+                    e.preventDefault();
+                    $("#apply-coupon-btn").click();
+                }
+            });
+
+            $(document).on('click', '.apply-coupon-btn', function (e) {
+                e.preventDefault();
+
+                if (e.which === 13 || e.type === 'click') {
+                    $(".edit-coupon-btn").removeClass("hidden");
+                    $(".cancel-coupon-btn").addClass("hidden");
+                    $("#edit-coupon-box").addClass("hidden");
+
+                    var coupon_code = $("#new_coupon_code").val();
+
+                    if (document.location.href.includes('?')) {
+                        var url = document.location.href + "&coupon=" + coupon_code;
+                    } else {
+                        var url = document.location.href + "?coupon=" + coupon_code;
+                    }
+                    document.location = url;
+                }
+            });
+
+            // Vote controls
+            $(document).on('click', '.toggle-vote-for-talk', function (e) {
+                e.preventDefault();
+                var talkID = $(this).data('talk');
+                var $el = $(this);
+                var currentVoteCount = parseInt($el.attr('data-votes'));
+                var voteCountSpan = $el.find(".vote-count");
+
+                if (!$.cookie('heysummit_attendee')) {
+                    $("#registerAttendeeModal").modal({ 'show': true });
+                    return false;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: hs_subdir_path + "/talks/" + talkID + "/toggle-vote/",
+                    data: {
+                        'csrfmiddlewaretoken': csrftoken
+                    },
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.not_logged_in) {
+                        }
+                        else {
+                            if ($el.hasClass("red") || (!$el.hasClass("red") && !$el.hasClass("blue"))) {
+                                $el.removeClass('red').addClass('blue');
+                                newVoteCount = currentVoteCount + 1;
+                            }
+                            else {
+                                $el.removeClass('blue').addClass('red');
+                                newVoteCount = currentVoteCount - 1;
+                            }
+                            voteCountSpan.html(newVoteCount);
+                            $el.attr('data-votes', newVoteCount);
+                        }
+                    }
+                });
+            });
+
+            $(document).on('click', '.attendee-join-btn', function (e) {
+
+                var talkID = $(this).data('talk');
+
+                $.post(hs_subdir_path + "/talks/" + talkID + "/track-attendance/", {
+                    'csrfmiddlewaretoken': csrftoken,
+                });
+            });
+
+        });
+
+        function validateRegPermissionsForm(registerContainer) {
+            var emailValue = registerContainer.find("#id_email").val();
+            var nameValue = registerContainer.find("#id_name").val();
+            var selectedAgreeTerms = registerContainer.find("#id_agree_terms").is(':checked');
+
+            var errorMsg = null;
+
+            if (!emailValue) {
+                errorMsg = "Please make sure you enter an email address.";
+            }
+            else if (!validateEmail(emailValue)) {
+                errorMsg = "Please make sure you enter a valid email address.";
+            }
+            else if (!nameValue) {
+                errorMsg = "Please make sure you enter your name.";
+            }
+
+            else if (!selectedAgreeTerms) {
+                errorMsg = "Please make sure you have agreed to our terms and conditions to continue.";
+            }
+            return errorMsg;
+        }
+
+        function validateRegCategoriesAndTalksForm(registerContainer) {
+            var errorMsg = null;
+
+
+
+            return errorMsg;
+        }
+
+        function validateRegTicketsForm(registerContainer) {
+            var selectedTicketCheckboxes = registerContainer.find("input[id*=ticket-checkbox]:checked");
+            var selectedTickets = [];
+            var errorMsg = null;
+
+            selectedTicketCheckboxes.each(function () {
+                selectedTickets.push($(this).val());
+            });
+
+
+            return errorMsg;
+        }
+
+        function validateRegCategoriesForm(registerContainer) {
+            var selectedCategoryCheckboxes = registerContainer.find("#id_categories:checked");
+            var selectedCategories = [];
+            var errorMsg = null;
+
+            selectedCategoryCheckboxes.each(function () {
+                selectedCategories.push($(this).val());
+            });
+
+
+            return errorMsg;
+        }
+
+        function validateRegTalksForm(registerContainer) {
+            var selectedTalkCheckboxes = registerContainer.find("#id_talks:checked");
+            var selectedTalks = [];
+            var errorMsg = null;
+
+            selectedTalkCheckboxes.each(function () {
+                selectedTalks.push($(this).val());
+            });
+
+
+            return errorMsg;
+        }
+
+        function logTweetIntent() {
+            var data = {
+                'csrfmiddlewaretoken': csrftoken
+            };
+            $.ajax({
+                type: "POST",
+                url: hs_subdir_path + "/checkout/tweet-intent/",
+                data: data,
+                success: function (response) { console.log('Intent logged...'); }
+            });
+        }
+
+        function logViralIncentiveIntent(incentiveID) {
+            var data = {
+                'csrfmiddlewaretoken': csrftoken,
+                'incentive_id': incentiveID
+            };
+            $.ajax({
+                type: "POST",
+                url: hs_subdir_path + "/checkout/viral-incentive-intent/",
+                data: data,
+                success: function (response) { console.log('Viral incentive intent logged...'); }
+            });
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+</div>

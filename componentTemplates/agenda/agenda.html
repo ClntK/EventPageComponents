@@ -1,0 +1,367 @@
+<html>
+
+    <head></head>
+
+    <body>
+        <div style="padding-bottom: 0px; padding-top: 0px;">
+
+
+            <style>
+                #agenda>div.section-heading {
+                    box-sizing: border-box;
+                    position: relative;
+                    padding: 125px 20px 0;
+                    /* agenda heading background heading */
+                    /* background-color: var(--color-dkblue); */
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    text-align: center;
+                    background-color: var(--color-dkblue);
+                    color: var(--color-ltblue);
+                }
+
+
+                #agenda>div.section-heading>p.section-heading_title {
+                    margin: 20px auto;
+                    /* font-family: var(--font-primary); */
+                    font-size: calc(32px + 120 * ((100vw - 320px) / (1600 - 300)));
+                    font-weight: 600;
+                    line-height: 1.2em;
+                }
+
+                #agenda>div.section-heading>p.dailyTheme {
+                    font-size: 36px;
+                }
+
+                #agenda>div.section-heading>p.section-heading_description {
+                    font-size: 20px;
+                }
+
+                .section-heading_description {
+                    font-weight: 500;
+                }
+
+                #agenda {
+                    position: relative;
+                    padding-bottom: 165px;
+                    /* agenda background color */
+                    background: var(--dkblue);
+                }
+
+                #agenda .section-heading h3 {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                #agenda .section-heading h2 {
+                    color: #fff;
+                    line-height: 1em;
+                }
+
+                #agenda .section-heading p {
+                    color: #fff;
+                }
+
+                #agenda .agenda-schedule {
+                    margin-top: 110px;
+                    font-family: 'sofia-pro', sans-serif;
+                }
+
+                #agenda .agenda-schedule .agenda-day {
+                    display: flex;
+                    width: 100%;
+                    max-width: 950px;
+                    margin: 0 auto 100px;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+
+                #agenda>div.agenda-schedule>div.agenda-day.two>div.agenda-date.desktopDate {
+                    display: inline-block;
+                }
+
+                #agenda>div.agenda-schedule>div.agenda-day.two>div.agenda-date.mobileDate {
+                    display: none;
+                }
+
+                #agenda .agenda-schedule .agenda-day .agenda-date {
+                    width: 112px;
+                    margin-right: 8%;
+                }
+
+                #agenda .agenda-schedule .agenda-day .agenda-date .agenda-date_number {
+                    /* width of colored shapes */
+                    width: 112px;
+                    /* height of colored shapes */
+                    height: 112px;
+                    /* border radius */
+                    border-radius: 20%;
+                    padding: 5px;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 54px;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                p.dailyTheme {
+                    color: white;
+                    line-height: 1.2em;
+                    font-size: 24px;
+                }
+
+                p.dayOfTheWeek {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+
+
+                #agenda .agenda-schedule .agenda-day .agenda-date .agenda-date_month {
+                    width: inherit;
+                    margin: auto;
+                    padding-top: 5px;
+                    padding-left: 10px;
+                    font-weight: bold;
+                    font-size: 24px;
+                    letter-spacing: 0.15em;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                #agenda .agenda-schedule .agenda-day.one .agenda-date .agenda-date_number {
+                    background: var(--color-purple);
+                }
+
+                #agenda .agenda-schedule .agenda-day.two .agenda-date .agenda-date_number {
+                    background: var(--color-dkgreen);
+                }
+
+                #agenda .agenda-schedule .agenda-day.three .agenda-date .agenda-date_number {
+                    background: var(--color-gold);
+                }
+
+                #agenda .agenda-schedule .agenda-day .agenda-info {
+                    flex-grow: 1;
+                    text-align: left;
+                }
+
+                #agenda .agenda-schedule .agenda-day .agenda-info .tag {
+                    padding: 7px 22px 8px;
+                    font-family: var(--font-secondary);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 160%;
+                    border-radius: 25px;
+                    display: inline-block;
+                    margin: 0 15px 13px 0;
+                }
+
+                #agenda .agenda-schedule .agenda-day.one .agenda-info .tag {
+                    background: var(--color-ltpurple);
+                    color: #A28A29;
+                }
+
+                #agenda .agenda-schedule .agenda-day.two .agenda-info .tag {
+                    background: var(--color-ltgreen);
+                    color: #C7594B;
+                    text-align: right;
+                }
+
+                #agenda .agenda-schedule .agenda-day.three .agenda-info .tag {
+                    background: var(--color-yellow);
+                    color: #2882C4;
+                }
+
+                #agenda .agenda-schedule .agenda-day .agenda-info a.tag {
+                    background: #fff !important;
+                    text-decoration: none;
+                    transition: all 200ms ease;
+                }
+
+                #agenda .agenda-schedule .agenda-day.one .agenda-info a.tag:hover {
+                    color: #FFEC9F;
+                    background: #A28A29 !important;
+                }
+
+                #agenda .agenda-schedule .agenda-day.two .agenda-info a.tag:hover {
+                    color: #FFC2BB;
+                    background: #C7594B !important;
+                }
+
+                #agenda .agenda-schedule .agenda-day.three .agenda-info a.tag:hover {
+                    color: #BDE1FC;
+                    background: #2882C4 !important;
+                }
+
+                /* button */
+
+                #agenda>a {
+                    margin: auto;
+                    padding: 15px;
+                    display: block;
+                    max-width: 35%;
+                    min-width: 25%;
+                    -webkit-user-select: none;
+                    user-select: none;
+
+                    border-radius: 100px;
+                    border: solid transparent;
+                    border-width: 6px;
+                    border-color: var(--color-orange);
+
+                    background-color: white;
+
+                    color: var(--dkblue);
+                    font-size: 18px;
+                    line-height: 29px;
+                    text-align: center;
+                    font-weight: bolder;
+
+                    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    z-index: 99;
+                }
+
+                #agenda>a:hover {
+                    color: white;
+                    border-color: var(--color-white);
+                    background-color: var(--color-orange);
+                }
+
+                /* dividers */
+                hr {
+                    width: 100%;
+                    border: 2px solid var(--color-ltblue);
+
+                }
+            </style>
+
+            <!-- media -->
+            <style>
+                @media (max-width:549px) {
+                    #agenda {
+                        padding-bottom: 125px;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day {
+                        margin-bottom: 70px;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day .agenda-date {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day .agenda-date .agenda-date_number {
+                        margin: 0 auto;
+                        vertical-align: middle;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day .agenda-info {
+                        text-align: center;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day .agenda-info h2 {
+                        font-size: 68px;
+                    }
+
+                    #agenda>div.agenda-schedule>div.agenda-day.two>div.agenda-date.desktopDate {
+                        display: none;
+                    }
+
+                    #agenda>div.agenda-schedule>div.agenda-day.two>div.agenda-date.mobileDate {
+                        display: inline-block;
+                    }
+
+
+                }
+
+                @media (max-width:449px) {
+                    #agenda .agenda-schedule .agenda-day .agenda-info .tag {
+                        margin-right: 0;
+                    }
+
+                    #agenda .agenda-schedule .agenda-day.one .agenda-info a.tag {
+                        margin-left: 15px;
+                    }
+                }
+            </style>
+
+            <section id="agenda">
+
+                <div class="section-heading">
+                    <p class="section-heading_title">Video Sessions</p>
+                    <p class="dailyTheme">What You'll Learn</p>
+                    <p class="section-heading_description">How to build profitable businesses, diversify your revenue by
+                        building things that matter, and
+                        best
+                        practices using technology and cutting-edge platforms.</p>
+                </div>
+                <div class="agenda-schedule">
+                    <div class="agenda-day one">
+                        <div class="agenda-date">
+                            <div class="agenda-date_number">DAY 1</div>
+                            <div class="agenda-date_month">AUG</div>
+                        </div>
+                        <div class="agenda-info">
+                            <p class="dayOfTheWeek">Tuesday</p>
+                            <hr>
+                            <p class="dailyTheme">How to Build a Profitable Passion-Based Business</p>
+                            <div class="tag">Creativity + Purpose Masterclasses</div>
+                            <div class="tag">Creative Tech Talks</div>
+                            <div class="tag">Networking</div>
+                            <div class="tag">Creative + Brand Workshop</div>
+                            <a class="tag" href="/agenda/">See All</a>
+                        </div>
+                    </div>
+                    <div class="agenda-day two">
+                        <div class="agenda-date mobileDate" style="padding-left: 30px;">
+                            <div class="agenda-date_number">DAY 2</div>
+                            <div class="agenda-date_month">AUG</div>
+                        </div>
+                        <div class="agenda-info">
+                            <p class="dayOfTheWeek">Wednesday</p>
+                            <hr>
+                            <p class="dailyTheme">Bringing Your First Idea to Launch</p>
+                            <div class="tag">Business Building Masterclasses</div>
+                            <div class="tag">Teachable: Lunch + Learn</div>
+                            <div class="tag">Go-to-Market Strategy</div>
+                            <a class="tag" href="/agenda/">See All</a>
+                        </div>
+                        <div class="agenda-date desktopDate" style="padding-left: 30px;">
+                            <div class="agenda-date_number">DAY 2</div>
+                            <div class="agenda-date_month">AUG</div>
+                        </div>
+                    </div>
+                    <div class="agenda-day three">
+                        <div class="agenda-date">
+                            <div class="agenda-date_number">DAY 3</div>
+                            <div class="agenda-date_month">AUG</div>
+                        </div>
+                        <div class="agenda-info">
+                            <p class="dayOfTheWeek">Thursday</p>
+                            <hr>
+                            <p class="dailyTheme">Best Practices Using Technology to Support Your Goals
+                            </p>
+                            <div class="tag">Community Building Masterclasses</div>
+                            <div class="tag">Courses: Lunch + Learn</div>
+                            <div class="tag">Video + Livestreaming Workshops</div>
+                            <a class="tag" href="/agenda/">See All</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bttnContainer">
+                    <a href="/agenda/"><button class="bttn bttnRegister">View Full Agenda</button></a>
+                </div>
+            </section>
+
+        </div>
+    </body>
+
+</html>
